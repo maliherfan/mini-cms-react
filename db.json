@@ -1,0 +1,1053 @@
+{
+  "pages": [
+    {
+      "id": "1",
+      "title": "Home",
+      "slug": "home",
+      "sections": [
+        {
+          "id": "sec_1779290640720",
+          "type": "header",
+          "props": {
+            "logo": "/images/karyar.svg",
+            "menuItems": [
+              {
+                "label": "صفحه اصلی",
+                "link": "/pages/home"
+              },
+              {
+                "label": "خدمات",
+                "link": "/pages/services"
+              },
+              {
+                "label": "درباره ما",
+                "link": "/pages/about"
+              },
+              {
+                "label": "تماس با ما",
+                "link": "/pages/contact"
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "textColor": "#111111",
+            "sticky": true
+          }
+        },
+        {
+          "id": "sec_1779290686912",
+          "type": "content",
+          "props": {
+            "title": "این جا هر ایده ای شانس تبدیل شدن به محصول را دارد",
+            "subtitle": "ما با تحلیل دقیق، طراحی کاربردی و اجرای فرآیند محور، به شما کمک می کنیم ایده هایتان را به محصولاتی واقعی، قابل استفاده و ارزش آفرین تبدیل کنید.",
+            "image": "/images/home/hero-image.svg",
+            "ctaText": "شروع همکاری ",
+            "ctaLink": "/pages/contact",
+            "align": "left",
+            "backgroundColor": "",
+            "textColor": "#000000",
+            "layout": "image-left",
+            "ctaColor": "#f28c18",
+            "textAlign": "right",
+            "imageVariant": "default",
+            "imageProportion": "ratio-5-5",
+            "backgroundOverlay": "",
+            "backgroundImage": ""
+          }
+        },
+        {
+          "id": "sec_1779290897990",
+          "type": "grid",
+          "props": {
+            "title": "",
+            "items": [
+              {
+                "image": "",
+                "title": "",
+                "text": "",
+                "link": "#",
+                "icon": "/images/home/digikala-icon.svg",
+                "badge": ""
+              },
+              {
+                "image": "",
+                "title": "",
+                "text": "",
+                "link": "",
+                "icon": "/images/home/karyar-icon.svg"
+              },
+              {
+                "icon": "/images/home/akeep-icon.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/home/sp-icon.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/home/divar-icon.svg",
+                "title": "",
+                "text": ""
+              }
+            ],
+            "columns": "5",
+            "backgroundColor": "#ffffff",
+            "ctaText": "",
+            "layout": "vertical-center"
+          }
+        },
+        {
+          "id": "sec_1779393809261",
+          "type": "grid",
+          "props": {
+            "title": "کاریار استودیو، جایی که ایده ها به تجربه تبدیل می شوند",
+            "items": [
+              {
+                "image": "",
+                "title": "طراحی محصول",
+                "text": "با بررسی مسئله، شناخت کاربران و طراحی تجربه ای دقیق، محصولاتی قابل اعتماد و موثر ارائه می دهیم.",
+                "icon": "/images/home/productdesign-icon.svg"
+              },
+              {
+                "icon": "/images/home/webdesign-icon.svg",
+                "title": "طراحی وب سایت",
+                "text": "وب سایت هایی سریع، کاربر پسند و متناسب با اهداف کسب و کار شما پیاده سازی می کنیم تا حضور دیجیتال برندتان تقویت شود."
+              }
+            ],
+            "columns": "2",
+            "ctaText": "خدمات ما",
+            "ctaLink": "/pages/services",
+            "backgroundColor": "#ffffff",
+            "layout": "horizontal",
+            "ctaColor": "#1EA965",
+            "iconSize": "large"
+          }
+        },
+        {
+          "id": "sec_1780122696149",
+          "type": "slider",
+          "props": {
+            "title": "پروژه هایی که برای ایجاد تجربه ای بهتر ساخته شدند",
+            "sectionBg": "",
+            "slides": [
+              {
+                "type": "content",
+                "props": {
+                  "title": "اپلیکیشن ماکاپ های پولی",
+                  "subtitle": "یک اپلیکیشن حرفه‌ای برای دریافت ماکاپ‌های پریمیوم طراحی کردیم. تمرکز این پروژه روی تجربه کاربری روان، دسته‌بندی هوشمند و ارائه محتوای اختصاصی با کیفیت بالا بود؛ طراحان بتونن سریع، راحت و مطمئن به منابع پولی و حرفه‌ای دسترسی داشته باشن.\nیک اپلیکیشن حرفه‌ای برای دریافت ماکاپ‌های پریمیوم طراحی کردیم. تمرکز این پروژه روی تجربه کاربری روان، دسته‌بندی هوشمند و ارائه محتوای اختصاصی با کیفیت بالا بود؛",
+                  "image": "/images/home/slider1.png",
+                  "layout": "image-left",
+                  "backgroundColor": "#ffffff",
+                  "imageProportion": "ratio-5-5",
+                  "mainIcon": "/images/home/digikala-icon2.svg",
+                  "iconSize": "medium",
+                  "items": [],
+                  "bordering": true
+                }
+              },
+              {
+                "type": "content",
+                "props": {
+                  "title": "سایت ماکاپ های رایگان",
+                  "subtitle": "سایتی طراحی کردیم که دسترسی سریع و ساده به مجموعه‌ای از ماکاپ‌های رایگان و باکیفیت رو برای طراحان فراهم می‌کنه. هدف این محصول، ایجاد یک تجربه روان و بدون دردسر برای پیدا کردن ماکاپ مناسب بود؛ جایی که کاربر بدون جست‌وجوی طولانی، مستقیماً به چیزی که نیاز داره برسه.",
+                  "columns": "3",
+                  "items": [],
+                  "backgroundColor": "",
+                  "image": "/images/home/slider2.png",
+                  "layout": "image-left",
+                  "imageProportion": "ratio-5-5",
+                  "bordering": true
+                }
+              },
+              {
+                "type": "",
+                "props": {
+                  "title": "سایت ماکاپ های رایگان",
+                  "subtitle": "سایتی طراحی کردیم که دسترسی سریع و ساده به مجموعه‌ای از ماکاپ‌های رایگان و باکیفیت رو برای طراحان فراهم می‌کنه. هدف این محصول، ایجاد یک تجربه روان و بدون دردسر برای پیدا کردن ماکاپ مناسب بود؛ جایی که کاربر بدون جست‌وجوی طولانی، مستقیماً به چیزی که نیاز داره برسه.",
+                  "backgroundColor": "",
+                  "image": "/images/home/slider3.png",
+                  "layout": "image-left",
+                  "columns": "",
+                  "items": [],
+                  "imageProportion": "ratio-5-5",
+                  "bordering": true
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "sec_1779397004426",
+          "type": "grid",
+          "props": {
+            "title": "روند تبدیل ایده به محصول",
+            "items": [
+              {
+                "image": "",
+                "title": "تشکیل تیم",
+                "text": "در ابتدا، با بررسی نیاز پروژه، تیمی متناسب با اهداف شما تشکیل می دهیم. متخصصان طراحی، توسعه و مدیریت پروژه در کنار هم قرار می گیرند.",
+                "icon": "/images/home/team-icon.svg"
+              },
+              {
+                "icon": "/images/home/circle-icon.svg",
+                "title": "چرخه های هفتگی",
+                "text": "کار در قالب اسپیرینت های هفتگی پیش می رود. در پایان هر چرخه، خروجی ها بررسی می شوند . بازخوردها برای بهبود مرحله بعد اعمال می شوند."
+              },
+              {
+                "icon": "/images/home/continue-icon.svg",
+                "title": "ادامه مسیر",
+                "text": "پس از رسیدن به نسخه قابل ارائه، مسیر توسعه و بهبود محصول بر اساس داده ها و بازخورد کاربران ادامه پیدا می کند."
+              }
+            ],
+            "columns": "3",
+            "ctaText": "شروع همکاری",
+            "ctaLink": "/pages/contact",
+            "backgroundColor": "#ffffff",
+            "subtitle": "مسیر ما از فهم مسئله شروع می‌شود و با ساخت محصولی کاربردی و قابل اعتماد به پایان می‌رسد.",
+            "layout": "styled",
+            "iconSize": "small",
+            "ctaColor": "#1EA965"
+          }
+        },
+        {
+          "id": "sec_1779716645625",
+          "type": "grid",
+          "props": {
+            "title": "آدم‌هایی که کاریار را معنا می‌کنند",
+            "subtitle": "کاریار استودیو یک تیم متعهد و متخصص است که برای ساخت تجربه‌های ارزشمند کنار هم قرار گرفته‌اند.",
+            "items": [
+              {
+                "image": "",
+                "title": "آلاله حسینی",
+                "text": "طراح سایت",
+                "icon": "/images/home/person1.svg"
+              },
+              {
+                "icon": "/images/home/person2.svg",
+                "title": "مهتاب فرجی",
+                "text": "مدیر پروژه"
+              },
+              {
+                "icon": "/images/home/person3.svg",
+                "title": "فرنوش جمالی",
+                "text": "طراح محصول"
+              },
+              {
+                "icon": "/images/home/person4.svg",
+                "title": "کیان شلیله",
+                "text": "مدیرفنی"
+              },
+              {
+                "icon": "/images/home/person5.svg",
+                "title": "آیدا هاشمی",
+                "text": "طراح سایت"
+              }
+            ],
+            "columns": "5",
+            "ctaText": "",
+            "ctaLink": "",
+            "backgroundColor": "#ffffff",
+            "layout": "vertical-center",
+            "iconSize": "large"
+          }
+        },
+        {
+          "id": "sec_1779759491656",
+          "type": "content",
+          "props": {
+            "title": "مشتاقیم قصه‌ محصول‌ شما رو بسازیم",
+            "subtitle": "",
+            "ctaText": "شروع همکاری",
+            "ctaLink": "/pages/contact",
+            "ctaColor": "#f59e0b",
+            "textAlign": "center",
+            "textColor": "#1f2937",
+            "layout": "image-right",
+            "image": "",
+            "imageVariant": "default",
+            "imageProportion": "ratio-7-3",
+            "contentType": "image",
+            "faqItems": [],
+            "customItems": [],
+            "backgroundImage": "/images/home/section-bg.png",
+            "backgroundOverlay": "#ffffff",
+            "minHeight": "320px",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "id": "sec_1779364320046",
+          "type": "footer",
+          "props": {
+            "logo": "/images/karyar.svg",
+            "description": "تمامی حقوق این سایت متعلق به کاریار استودیو است.",
+            "socialLinks": [
+              {
+                "icon": "/images/whatsapp-icon.svg",
+                "link": ""
+              },
+              {
+                "icon": "/images/insta-icon.svg",
+                "link": ""
+              },
+              {
+                "icon": "/images/linkedin-icon.svg",
+                "link": ""
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "textColor": "#000000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "About",
+      "slug": "about",
+      "sections": [
+        {
+          "id": "sec_1779480402661",
+          "type": "header",
+          "props": {
+            "logo": "/images/karyar.svg",
+            "menuItems": [
+              {
+                "label": "صفحه اصلی",
+                "link": "/pages/home"
+              },
+              {
+                "label": "خدمات",
+                "link": "/pages/services"
+              },
+              {
+                "label": "درباره ما",
+                "link": "/pages/about"
+              },
+              {
+                "label": "تماس با ما",
+                "link": "/pages/contact"
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "textColor": "#111111",
+            "sticky": true
+          }
+        },
+        {
+          "id": "sec_1779480661139",
+          "type": "content",
+          "props": {
+            "title": "از یادگیری تا ساخت محصول واقعی",
+            "subtitle": "کاریار از یک مدرسه شروع شد، جایی که استعدادهای برنامه نویسی و طراحی از سراسر کشور شناسایی و برای ورود به دنیای حرفه ای آماده می شوند. \nکاریار استودیو ادامه همین مسیر است، جایی که این استعدادها در پروژه های واقعی کار می کنند، مهارت هایشان را به کار می گیرند و وارد بازار کار می شوند. ما صرفاً پروژه تحویل نمی دهیم، ما به عنوان تیم محصول، کنار شما می ایستیم و در مسیر ساخت راه حل همراهتان هستیم. تیمی که بیرون از دفتر شما کار می کند اما مثل بخشی از سازمان شما فکر می کند و تصمیم می گیرد.",
+            "image": "/images/about/about-hero.svg",
+            "ctaText": "",
+            "ctaLink": "",
+            "align": "right",
+            "backgroundColor": "#ffffff",
+            "textColor": "#000000",
+            "layout": "image-left"
+          }
+        },
+        {
+          "id": "sec_1779486321203",
+          "type": "content",
+          "props": {
+            "title": "تیم محصول، بدون دغدغه استخدام",
+            "subtitle": "در کاریار استودیو، فارغ‌التحصیلان منتخب کاریار شامل توسعه‌دهندگان و طراحان، زیر نظر مستقیم منتورها و اساتید باتجربه فعالیت می‌کنند.هر تصمیم فنی و هر خروجی، پیش از تحویل بررسی و تایید می‌شود.\nبه این ترتیب، شما انرژی و انگیزه نیروهای جوان را در کنار تجربه متخصصان حرفه‌ای دریافت می‌کنید؛ بدون درگیر شدن با فرآیندهای پیچیده استخدام و مدیریت تیم.",
+            "image": "/images/about/about-hero2.svg",
+            "ctaText": "",
+            "ctaLink": "",
+            "align": "right",
+            "backgroundColor": "#ffffff",
+            "textColor": "#000000"
+          }
+        },
+        {
+          "id": "sec_1779686518467",
+          "type": "grid",
+          "props": {
+            "title": "ارزش‌هایی که در عمل تجربه می‌کنید",
+            "subtitle": "",
+            "items": [
+              {
+                "image": "",
+                "title": "انعطاف‌پذیری کامل (Agile)",
+                "text": "کار به‌صورت هفتگی پیش می‌رود. شما خروجی را می‌بینید، بازخورد می‌دهید و تغییرات اعمال می‌شوند.شما در تمام مراحل ساخت محصول حضور دارید، نه فقط روز اول و آخر."
+              },
+              {
+                "icon": "",
+                "title": "کیفیت تضمین‌شده",
+                "text": "کار توسط جوانان انجام می‌شود، اما استانداردها توسط متخصصان باتجربه بررسی می‌شوند. که به معنی کدنویسی با نظارت دقیق فنی همراه می‌باشد."
+              },
+              {
+                "icon": "",
+                "title": "همکاری شفاف",
+                "text": "مدل قرارداد ما ماهانه است، درست مثل همکاری با تیم داخلی. بدون پیچیدگی قراردادهای پروژه‌ای. تیم فنی ما در تمام طول مسیر در کنار شما خواهد بود."
+              },
+              {
+                "icon": "",
+                "title": "اثرگذاری اجتماعی",
+                "text": "همکاری با ما فقط یک تصمیم تجاری نیست. با هر پروژه، یک فرصت شغلی واقعی برای یک جوان در هر نقطه از ایران ایجاد می‌شود. پروژه شما، شغل آینده یک نفر است."
+              }
+            ],
+            "columns": "2",
+            "ctaText": "شروع همکاری",
+            "ctaLink": "/pages/contact",
+            "backgroundColor": "#ffffff",
+            "layout": "styled",
+            "backgroundImage": "/images/about/section-bg2.svg"
+          }
+        },
+        {
+          "id": "sec_1779486790224",
+          "type": "content",
+          "props": {
+            "title": "مسیری که برای آینده انتخاب کرده‌ایم",
+            "subtitle": "هدف ما تبدیل شدن به مرجع تیم‌های محصول چابک است. می‌خواهیم هر استارتاپ یا شرکتی که نیاز به تیم محصول دارد، به‌جای فرآیند طولانی استخدام، سراغ کاریار استودیو بیاید. چشم‌انداز ما ساخت و ارائه تیم‌های آماده‌به‌کار شامل توسعه‌دهنده، طراح و مدیر محصول برای اکوسیستم استارتاپی است.",
+            "image": "/images/about/about-hero3.svg",
+            "ctaText": "",
+            "ctaLink": "",
+            "align": "right",
+            "backgroundColor": "#ffffff",
+            "textColor": "#000000",
+            "imageProportion": "ratio-8-2"
+          }
+        },
+        {
+          "id": "sec_1779529278694",
+          "type": "content",
+          "props": {
+            "title": "جایی که همه‌چیز آغاز شد",
+            "subtitle": "کاریار استودیو از دل کاریار شکل گرفته است. مسیر آموزشی‌ای که برای آماده‌سازی نیروهای جوان جهت ورود به دنیای حرفه‌ای ایجاد شده است. کاریار، بستر یادگیری و رشد استعدادهاست و کاریار استودیو جایی است که این یادگیری‌ها در پروژه‌های واقعی به اجرا می‌رسند. اگر دوست دارید با مسیر آموزشی کاریار بیشتر آشنا شوید، می‌توانید مستقیماً به وب‌سایت کاریار مراجعه کنید.",
+            "image": "",
+            "ctaText": "وب‌سایت کاریار",
+            "ctaLink": "/pages/home",
+            "align": "right",
+            "backgroundColor": "#ffffff",
+            "textColor": "#000000",
+            "textAlign": "center",
+            "layout": "image-top",
+            "ctaColor": "#1EA965"
+          }
+        },
+        {
+          "id": "sec_1779689819172",
+          "type": "grid",
+          "props": {
+            "title": "آدم‌هایی که کاریار استودیو را می‌سازند",
+            "subtitle": "",
+            "items": [
+              {
+                "image": "",
+                "title": "",
+                "text": "",
+                "icon": "/images/about/person1.svg"
+              },
+              {
+                "icon": "/images/about/person2.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person3.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person4.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person5.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person6.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person7.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person1.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person3.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person2.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person5.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person4.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person7.svg",
+                "title": "",
+                "text": ""
+              },
+              {
+                "icon": "/images/about/person6.svg",
+                "title": "",
+                "text": ""
+              }
+            ],
+            "columns": "7",
+            "ctaText": "",
+            "ctaLink": "",
+            "backgroundColor": "#ffffff",
+            "iconSize": "large",
+            "layout": "horizontal"
+          }
+        },
+        {
+          "id": "sec_1779552455858",
+          "type": "content",
+          "props": {
+            "title": "یک پیام فاصله داریم",
+            "subtitle": "",
+            "ctaText": "شروع همکاری",
+            "ctaLink": "/pages/contact",
+            "ctaColor": "#f59e0b",
+            "textAlign": "center",
+            "textColor": "#1f2937",
+            "layout": "image-right",
+            "image": "",
+            "imageVariant": "default",
+            "imageProportion": "ratio-7-3",
+            "backgroundImage": "/images/about/section-bg.jpeg",
+            "backgroundOverlay": "#ffffff",
+            "minHeight": "320px",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "id": "sec_1779530976705",
+          "type": "footer",
+          "props": {
+            "logo": "/images/karyar.svg",
+            "description": "تمامی حقوق این سایت متعلق به کاریار استودیو است.",
+            "socialLinks": [
+              {
+                "icon": "/images/whatsapp-icon.svg",
+                "link": ""
+              },
+              {
+                "icon": "/images/insta-icon.svg",
+                "link": ""
+              },
+              {
+                "icon": "/images/linkedin-icon.svg",
+                "link": ""
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "textColor": "#000000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Contact",
+      "slug": "contact",
+      "sections": [
+        {
+          "id": "sec_1779531810800",
+          "type": "header",
+          "props": {
+            "logo": "/images/karyar.svg",
+            "menuItems": [
+              {
+                "label": "صفحه اصلی",
+                "link": "/pages/home"
+              },
+              {
+                "label": "خدمات",
+                "link": "/pages/services"
+              },
+              {
+                "label": "درباره ما",
+                "link": "/pages/about"
+              },
+              {
+                "label": "تماس با ما",
+                "link": "/pages/contact"
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "textColor": "#111111",
+            "sticky": true
+          }
+        },
+        {
+          "id": "sec_1779641074434",
+          "type": "content",
+          "props": {
+            "title": "یک پیام کوتاه، نقطه شروع یک همکاری حرفه‌ای است",
+            "subtitle": "",
+            "ctaText": "",
+            "ctaLink": "",
+            "ctaColor": "#f59e0b",
+            "textAlign": "right",
+            "textColor": "#1f2937",
+            "layout": "image-right",
+            "image": "/images/contact/hero-contact.svg",
+            "imageVariant": "default",
+            "imageProportion": "ratio-6-4",
+            "contentType": "image",
+            "faqItems": [],
+            "customItems": [
+              {
+                "icon": "/images/contact/phone-icon.svg",
+                "title": "09123456789",
+                "text": ""
+              },
+              {
+                "icon": "/images/contact/mail-icon.svg",
+                "title": "Example@studiokaaryar.ir",
+                "text": ""
+              },
+              {
+                "icon": "/images/contact/location-icon.svg",
+                "title": "ونک، چهار راه جهان کودک، کوچه عظیمی، پلاک 12، ساختمان نیکا، واحد 3",
+                "text": ""
+              }
+            ],
+            "backgroundImage": "",
+            "backgroundOverlay": "rgba(0, 0, 0, 0.4)",
+            "minHeight": "320px",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "id": "sec_1779683655486",
+          "type": "grid",
+          "props": {
+            "title": "سفر ساخت محصول با کاریار استودیو",
+            "subtitle": "",
+            "items": [
+              {
+                "image": "",
+                "title": "تشکیل تیم",
+                "text": "در ابتدا، با بررسی نیاز پروژه، تیمی متناسب با اهداف شما تشکیل می‌دهیم. متخصصان طراحی، توسعه و مدیریت پروژه در کنار هم قرار می‌گیرند.",
+                "icon": "/images/contact/team-icon-contact.svg"
+              },
+              {
+                "icon": "/images/contact/circle-icon-contact.svg",
+                "title": "چرخه‌های هفتگی",
+                "text": "کار در قالب اسپرینت‌های هفتگی پیش می‌رود. در پایان هر چرخه، خروجی‌ها بررسی می‌شوند و بازخوردها برای بهبود مرحله بعد اعمال می‌شوند."
+              },
+              {
+                "icon": "/images/contact/continue-icon-contact.svg",
+                "title": "ادامه مسیر",
+                "text": "پس از رسیدن به نسخه قابل ارائه، مسیر توسعه و بهبود محصول بر اساس داده‌ها و بازخورد کاربران ادامه پیدا می‌کند."
+              }
+            ],
+            "columns": "3",
+            "ctaText": "",
+            "ctaLink": "",
+            "backgroundColor": "#ffffff",
+            "iconSize": "medium"
+          }
+        },
+        {
+          "id": "sec_1779683980302",
+          "type": "content",
+          "props": {
+            "title": "سوالاتی که کمک می‌کنند تصمیم بهتری بگیرید",
+            "subtitle": "",
+            "ctaText": "",
+            "ctaLink": "",
+            "ctaColor": "#f59e0b",
+            "textAlign": "right",
+            "textColor": "#1f2937",
+            "layout": "image-left",
+            "image": "",
+            "imageVariant": "default",
+            "imageProportion": "ratio-4-6",
+            "contentType": "faq",
+            "faqItems": [
+              {
+                "question": "فرایند همکاری با کاریار استودیو چطور شروع می‌شود؟",
+                "answer": "1.بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم."
+              },
+              {
+                "question": "هزینه طراحی چطور محاسبه می شود؟",
+                "answer": "2.بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم."
+              },
+              {
+                "question": "آیا بعد از تحویل پروژه، پشتیبانی هم دارید؟",
+                "answer": "3.بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم."
+              },
+              {
+                "question": "برای شروع همکاری چه چیزهایی باید آماده داشته باشیم؟",
+                "answer": "4.بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم."
+              },
+              {
+                "question": "زمان انجام یک پروژه طراحی محصول یا طراحی وب سایت چقدر است؟",
+                "answer": "5.بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم."
+              }
+            ],
+            "customItems": [],
+            "backgroundImage": "",
+            "backgroundOverlay": "rgba(0, 0, 0, 0.4)",
+            "minHeight": "320px",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "id": "sec_1779641327531",
+          "type": "footer",
+          "props": {
+            "logo": "/images/karyar.svg",
+            "description": "تمامی حقوق این سایت متعلق به کاریار استودیو است.",
+            "socialLinks": [
+              {
+                "icon": "/images/whatsapp-icon.svg",
+                "link": ""
+              },
+              {
+                "icon": "/images/insta-icon.svg",
+                "link": ""
+              },
+              {
+                "icon": "/images/linkedin-icon.svg",
+                "link": ""
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "textColor": "#000000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HuJkgtEpQaE",
+      "title": "Services",
+      "slug": "services",
+      "sections": [
+        {
+          "id": "sec_1779531564193",
+          "type": "header",
+          "props": {
+            "logo": "/images/karyar.svg",
+            "menuItems": [
+              {
+                "label": "صفحه اصلی",
+                "link": "/pages/home"
+              },
+              {
+                "label": "خدمات",
+                "link": "/pages/services"
+              },
+              {
+                "label": "درباره ما",
+                "link": "/pages/about"
+              },
+              {
+                "label": "تماس با ما",
+                "link": "/pages/contact"
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "textColor": "#111111",
+            "sticky": true
+          }
+        },
+        {
+          "id": "sec_1779640057058",
+          "type": "content",
+          "props": {
+            "title": "خدماتی که ایده را به محصول واقعی تبدیل می‌کند",
+            "subtitle": "ما در کاریار استودیو، با ترکیب طراحی محصول و طراحی وب‌سایت، به کسب‌وکارها کمک می‌کنیم مسیر رشدشان را شفاف، سریع و قابل اجرا بسازند.",
+            "ctaText": "",
+            "ctaLink": "",
+            "ctaColor": "#f59e0b",
+            "textAlign": "right",
+            "textColor": "#1f2937",
+            "layout": "image-right",
+            "image": "/images/services/hero-services.svg",
+            "imageVariant": "default",
+            "imageProportion": "ratio-6-4",
+            "contentType": "image",
+            "faqItems": [],
+            "customItems": [
+              {
+                "icon": "/images/services/list-icon1.svg",
+                "title": "طراحی محصول",
+                "text": "محصولاتی می‌سازیم که مسئله‌ درست را حل کنند و تجربه‌ای قابل اعتماد و قابل رشد ارائه دهند."
+              },
+              {
+                "icon": "/images/services/list-icon2.svg",
+                "title": "طراحی وب‌سایت",
+                "text": "وب‌سایت‌هایی می‌سازیم که سریع، مدرن و کاربرپسند باشند و حضور دیجیتال شما را تقویت کنند."
+              }
+            ],
+            "backgroundImage": "",
+            "backgroundOverlay": "rgba(0, 0, 0, 0.4)",
+            "minHeight": "320px",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "id": "sec_1779767289985",
+          "type": "grid",
+          "props": {
+            "title": "پلتفرم آنالیز وب",
+            "subtitle": "این پلتفرم به کاربرها این امکان رو میده که به سادگی و به صورت آنی، داده‌های وب‌سایت خودشون رو آنالیز کنن و عملکرد کلی رو بهبود ببخشند. هدف ما، ارائه ابزارهایی کاربرپسند و جامع برای تحلیل رفتار کاربران هست.",
+            "items": [
+              {
+                "image": "",
+                "title": "",
+                "text": "",
+                "icon": "",
+                "backgroundImage": "/images/services/webanalyze1.png",
+                "backgroundColor": "#f8f8f8"
+              },
+              {
+                "icon": "",
+                "title": "",
+                "text": "",
+                "backgroundImage": "/images/services/webanalyze2.png",
+                "backgroundColor": "#f8f8f8"
+              },
+              {
+                "icon": "",
+                "title": "",
+                "text": "",
+                "backgroundImage": "/images/services/webanalyze3.png",
+                "backgroundColor": "#f8f8f8"
+              }
+            ],
+            "iconSize": "very-large",
+            "columns": "3",
+            "ctaText": "",
+            "ctaLink": "/contact",
+            "backgroundColor": "#ffffff",
+            "mainIcon": "/images/services/list-icon1.svg",
+            "layout": "simple",
+            "secondaryIcon": "/images/services/digikala-services.svg",
+            "bordering": true
+          }
+        },
+        {
+          "id": "sec_1779773395858",
+          "type": "grid",
+          "props": {
+            "title": "سایت ماکاپ‌های رایگان",
+            "subtitle": "سایتی طراحی کردیم که دسترسی سریع و ساده به مجموعه‌ای از ماکاپ‌های رایگان و باکیفیت رو برای طراحان فراهم می‌کنه. هدف این محصول، ایجاد یک تجربه روان و بدون دردسر برای پیدا کردن ماکاپ مناسب بود.",
+            "items": [
+              {
+                "image": "",
+                "title": "",
+                "text": "",
+                "backgroundImage": "/images/services/mockup1.png",
+                "backgroundColor": "#f8f8f8"
+              },
+              {
+                "icon": "",
+                "title": "",
+                "text": "",
+                "backgroundImage": "/images/services/mockup2.png",
+                "backgroundColor": "#f8f8f8"
+              },
+              {
+                "icon": "",
+                "title": "",
+                "text": "",
+                "backgroundImage": "/images/services/mockup3.png",
+                "backgroundColor": "#f8f8f8"
+              }
+            ],
+            "iconSize": "medium",
+            "columns": "3",
+            "ctaText": "",
+            "ctaLink": "/contact",
+            "mainIcon": "/images/services/list-icon2.svg",
+            "secondaryIcon": "/images/services/karyar-services.svg",
+            "bordering": true
+          }
+        },
+        {
+          "id": "sec_1779773775052",
+          "type": "grid",
+          "props": {
+            "title": "نرم‌افزار مدیریت تسک",
+            "subtitle": "این نرم‌افزار به تیم‌ها کمک می‌کند تا کارهای خود را سازماندهی کنند و وظایف را به راحتی پیگیری کنند. هدف ما، افزایش بهره‌وری و همکاری در بین اعضای تیم است.",
+            "items": [
+              {
+                "image": "",
+                "title": "",
+                "text": "",
+                "backgroundImage": "/images/services/taskmanagement1.png",
+                "backgroundColor": "#f8f8f8"
+              },
+              {
+                "icon": "",
+                "title": "",
+                "text": "",
+                "backgroundImage": "/images/services/taskmanagement2.png",
+                "backgroundColor": "#f8f8f8"
+              },
+              {
+                "icon": "",
+                "title": "",
+                "text": "",
+                "backgroundImage": "/images/services/taskmanagement3.png",
+                "backgroundColor": "#f8f8f8"
+              }
+            ],
+            "iconSize": "medium",
+            "columns": "3",
+            "ctaText": "",
+            "ctaLink": "/contact",
+            "mainIcon": "/images/services/list-icon2.svg",
+            "secondaryIcon": "/images/services/akeep-services.svg",
+            "bordering": true
+          }
+        },
+        {
+          "id": "sec_1779682028458",
+          "type": "grid",
+          "props": {
+            "title": "سفر ساخت یک محصول، از اینجا شروع می‌شود",
+            "items": [
+              {
+                "image": "",
+                "title": "تشکیل تیم",
+                "text": "در ابتدا، با بررسی نیاز پروژه، تیمی متناسب با اهداف شما تشکیل می‌دهیم. متخصصان طراحی، توسعه و مدیریت پروژه در کنار هم قرار می‌گیرند.",
+                "icon": "/images/services/team-icon-services.svg"
+              },
+              {
+                "icon": "/images/services/circle-icon-services.svg",
+                "title": "چرخه‌های هفتگی",
+                "text": "کار در قالب اسپرینت‌های هفتگی پیش می‌رود. در پایان هر چرخه، خروجی‌ها بررسی می‌شوند و بازخوردها برای بهبود مرحله بعد اعمال می‌شوند."
+              },
+              {
+                "icon": "/images/services/continue-icon-services.svg",
+                "title": "ادامه مسیر",
+                "text": "پس از رسیدن به نسخه قابل ارائه، مسیر توسعه و بهبود محصول بر اساس داده‌ها و بازخورد کاربران ادامه پیدا می‌کند."
+              }
+            ],
+            "columns": "3",
+            "ctaText": "شروع همکاری",
+            "ctaLink": "/pages/contact",
+            "backgroundColor": "#ffffff",
+            "subtitle": "با هم از نقطه شناخت شروع می‌کنیم، مسیر را مشخص می‌کنیم و قدم‌به‌قدم به سمت ساخت تجربه نهایی پیش می‌رویم.",
+            "iconSize": "medium"
+          }
+        },
+        {
+          "id": "sec_1779606096152",
+          "type": "content",
+          "props": {
+            "title": "سوالاتی که کمک می‌کنند تصمیم بهتری بگیرید",
+            "subtitle": "",
+            "ctaText": "",
+            "ctaLink": "",
+            "ctaColor": "#f59e0b",
+            "textAlign": "right",
+            "textColor": "#1f2937",
+            "layout": "image-left",
+            "image": "",
+            "imageVariant": "default",
+            "imageProportion": "ratio-4-6",
+            "contentType": "faq",
+            "faqItems": [
+              {
+                "question": "فرایند همکاری با کاریار استودیو چطور شروع می‌شود؟",
+                "answer": "بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم."
+              },
+              {
+                "question": "هزینه طراحی چطور محاسبه می شود؟",
+                "answer": "بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم."
+              },
+              {
+                "question": "آیا بعد از تحویل پروژه پشتیبانی هم دارید؟",
+                "answer": "بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم."
+              },
+              {
+                "question": "برای شروع همکاری چه چیزهایی باید آماده داشته باشم؟",
+                "answer": "بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم."
+              },
+              {
+                "question": "زمان انجام یک پروژه طراحی محصول یا طراحی وب سایت چقدر است؟",
+                "answer": "بعد از ارسال درخواست، یک تماس کوتاه برای درک نیازها برگزار می‌کنیم. سپس بر اساس هدف، دامنه کار و زمان‌بندی، پروپوزال اولیه آماده می‌شود. با تأیید شما، وارد مرحله طراحی و اجرا می‌شویم."
+              }
+            ],
+            "backgroundImage": "",
+            "backgroundOverlay": "rgba(0, 0, 0, 0.4)",
+            "minHeight": "320px",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "id": "sec_1779553157598",
+          "type": "content",
+          "props": {
+            "title": "هر محصولی یک نقطه شروع دارد، نقطه شروع شما را می‌سازیم",
+            "subtitle": "",
+            "ctaText": "شروع همکاری",
+            "ctaLink": "/pages/contact",
+            "ctaColor": "#1EA965",
+            "textAlign": "center",
+            "textColor": "#1f2937",
+            "layout": "image-right",
+            "image": "",
+            "imageVariant": "default",
+            "imageProportion": "ratio-7-3",
+            "backgroundImage": "/images/services/section-bg.jpeg",
+            "backgroundOverlay": "#ffffff",
+            "minHeight": "320px",
+            "backgroundColor": "#ffffff"
+          }
+        },
+        {
+          "id": "sec_1779531651060",
+          "type": "footer",
+          "props": {
+            "logo": "/images/karyar.svg",
+            "description": "تمامی حقوق این سایت متعلق به کاریار استودیو است.",
+            "socialLinks": [
+              {
+                "icon": "/images/whatsapp-icon.svg",
+                "link": ""
+              },
+              {
+                "icon": "/images/insta-icon.svg",
+                "link": ""
+              },
+              {
+                "icon": "/images/linkedin-icon.svg",
+                "link": ""
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "textColor": "#000000"
+          }
+        }
+      ]
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

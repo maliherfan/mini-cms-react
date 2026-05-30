@@ -1,0 +1,160 @@
+:root {
+  --primary: #1ea965;
+  --secondary: #ffd84d;
+  --accent: #2e2e3a;
+}
+.section-controls {
+  position: absolute;
+  z-index: 20;
+  top: 5px;
+  right: 5px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 4px;
+  display: flex;
+  gap: 5px;
+}
+
+.section-controls button {
+  cursor: pointer;
+}
+
+.section-list {
+  padding: 10px;
+}
+
+.section-list-title {
+  margin-bottom: 12px;
+}
+
+.section-list-button {
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.section-wrapper {
+  border: 1px dashed #ccc;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.section-wrapper.is-selected {
+  border: 2px solid #007bff;
+}
+
+.section-settings {
+  padding: 10px;
+}
+
+.section-settings-title {
+  margin-bottom: 10px;
+}
+
+.admin-field {
+  margin-bottom: 14px;
+}
+
+.admin-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.admin-field input,
+.admin-field textarea,
+.admin-field select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'vazirmatn';
+}
+
+.editor-array {
+  margin-bottom: 16px;
+}
+
+.editor-array-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.editor-color-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.editor-color-row input[type='color'] {
+  width: 50px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.editor-image-preview {
+  margin-top: 10px;
+}
+
+.editor-image-preview-img {
+  width: 120px;
+  display: block;
+}
+
+.admin-field-switch label {
+  margin-bottom: 0;
+}
+
+.admin-field-switch input {
+  width: auto;
+}
+
+.editor-button {
+  border: 1px solid transparent;
+  background: #fff;
+  color: var(--accent);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: 'vazirmatn';
+}
+
+.editor-button-add {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(30, 169, 101, 0.18);
+}
+
+.editor-button-add:hover {
+  background: #189157;
+  border-color: #189157;
+  box-shadow: 0 6px 14px rgba(30, 169, 101, 0.24);
+}
+
+.editor-button-delete {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--accent);
+  box-shadow: 0 4px 10px rgba(255, 216, 77, 0.22);
+}
+
+.editor-button-delete:hover {
+  background: #f2cb3f;
+  border-color: #f2cb3f;
+  box-shadow: 0 6px 14px rgba(255, 216, 77, 0.28);
+}
+
+.editor-array-actions {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
