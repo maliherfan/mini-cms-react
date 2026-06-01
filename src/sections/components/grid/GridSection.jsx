@@ -12,7 +12,7 @@ export default function GridSection({
   ctaColor,
   backgroundColor,
   backgroundImage,
-  layout = 'simple',
+  cardsLayout = 'simple',
   iconSize = 'medium',
   bordering = false,
 }) {
@@ -55,7 +55,7 @@ export default function GridSection({
           {items.map((item, i) => (
             <div
               key={i}
-              className={`grid-card layout-${layout} ${!!item.backgroundImage ? 'has-card-bg' : ''}`}
+              className={`grid-card layout-${cardsLayout} ${!!item.backgroundImage ? 'has-card-bg' : ''}`}
               style={{
                 backgroundColor: item.backgroundColor,
                 backgroundImage: item.backgroundImage

@@ -7,7 +7,6 @@ export default function PageRenderer({ sections = [], mode = 'public' }) {
     <>
       {sections.map((section) => {
         const Component = sectionRegistry[section.type];
-
         if (!Component) return null;
 
         if (mode === 'admin') {

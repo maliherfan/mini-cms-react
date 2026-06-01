@@ -51,7 +51,8 @@
             "imageVariant": "default",
             "imageProportion": "ratio-5-5",
             "backgroundOverlay": "",
-            "backgroundImage": ""
+            "backgroundImage": "",
+            "contentType": "image"
           }
         },
         {
@@ -94,7 +95,7 @@
             "columns": "5",
             "backgroundColor": "#ffffff",
             "ctaText": "",
-            "layout": "vertical-center"
+            "cardsLayout": "vertical-center"
           }
         },
         {
@@ -119,7 +120,7 @@
             "ctaText": "خدمات ما",
             "ctaLink": "/pages/services",
             "backgroundColor": "#ffffff",
-            "layout": "horizontal",
+            "cardsLayout": "horizontal",
             "ctaColor": "#1EA965",
             "iconSize": "large"
           }
@@ -133,45 +134,116 @@
             "slides": [
               {
                 "type": "content",
-                "props": {
-                  "title": "اپلیکیشن ماکاپ های پولی",
+                "contentProps": {
+                  "title": "اپلیکیشن ماکاپ‌های پولی",
                   "subtitle": "یک اپلیکیشن حرفه‌ای برای دریافت ماکاپ‌های پریمیوم طراحی کردیم. تمرکز این پروژه روی تجربه کاربری روان، دسته‌بندی هوشمند و ارائه محتوای اختصاصی با کیفیت بالا بود؛ طراحان بتونن سریع، راحت و مطمئن به منابع پولی و حرفه‌ای دسترسی داشته باشن.\nیک اپلیکیشن حرفه‌ای برای دریافت ماکاپ‌های پریمیوم طراحی کردیم. تمرکز این پروژه روی تجربه کاربری روان، دسته‌بندی هوشمند و ارائه محتوای اختصاصی با کیفیت بالا بود؛",
+                  "textAlign": "",
+                  "textColor": "",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "",
+                  "customItems": [],
+                  "contentType": "image",
                   "image": "/images/home/slider1.png",
                   "layout": "image-left",
-                  "backgroundColor": "#ffffff",
                   "imageProportion": "ratio-5-5",
-                  "mainIcon": "/images/home/digikala-icon2.svg",
-                  "iconSize": "medium",
+                  "faqItems": [],
+                  "backgroundImage": "",
+                  "backgroundOverlay": "",
+                  "backgroundColor": "",
+                  "minHeight": ""
+                },
+                "gridProps": {
+                  "title": "",
+                  "mainIcon": "",
+                  "secondaryIcon": "",
+                  "subtitle": "",
                   "items": [],
-                  "bordering": true
+                  "cardsLayout": "",
+                  "iconSize": "",
+                  "columns": "",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "",
+                  "backgroundColor": "",
+                  "backgroundImage": "",
+                  "bordering": false
                 }
               },
               {
                 "type": "content",
-                "props": {
-                  "title": "سایت ماکاپ های رایگان",
+                "contentProps": {
+                  "title": "سایت ماکاپ‌های رایگان",
                   "subtitle": "سایتی طراحی کردیم که دسترسی سریع و ساده به مجموعه‌ای از ماکاپ‌های رایگان و باکیفیت رو برای طراحان فراهم می‌کنه. هدف این محصول، ایجاد یک تجربه روان و بدون دردسر برای پیدا کردن ماکاپ مناسب بود؛ جایی که کاربر بدون جست‌وجوی طولانی، مستقیماً به چیزی که نیاز داره برسه.",
-                  "columns": "3",
-                  "items": [],
-                  "backgroundColor": "",
+                  "textAlign": "",
+                  "textColor": "",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "",
+                  "customItems": [],
+                  "contentType": "image",
                   "image": "/images/home/slider2.png",
                   "layout": "image-left",
                   "imageProportion": "ratio-5-5",
-                  "bordering": true
+                  "faqItems": [],
+                  "backgroundImage": "",
+                  "backgroundOverlay": "",
+                  "backgroundColor": "",
+                  "minHeight": ""
+                },
+                "gridProps": {
+                  "title": "",
+                  "mainIcon": "",
+                  "secondaryIcon": "",
+                  "subtitle": "",
+                  "items": [],
+                  "cardsLayout": "",
+                  "iconSize": "",
+                  "columns": "",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "",
+                  "backgroundColor": "",
+                  "backgroundImage": "",
+                  "bordering": false
                 }
               },
               {
-                "type": "",
-                "props": {
-                  "title": "سایت ماکاپ های رایگان",
+                "type": "content",
+                "contentProps": {
+                  "title": "سایت ماکاپ‌های رایگان",
                   "subtitle": "سایتی طراحی کردیم که دسترسی سریع و ساده به مجموعه‌ای از ماکاپ‌های رایگان و باکیفیت رو برای طراحان فراهم می‌کنه. هدف این محصول، ایجاد یک تجربه روان و بدون دردسر برای پیدا کردن ماکاپ مناسب بود؛ جایی که کاربر بدون جست‌وجوی طولانی، مستقیماً به چیزی که نیاز داره برسه.",
-                  "backgroundColor": "",
+                  "textAlign": "",
+                  "textColor": "",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "",
+                  "customItems": [],
+                  "contentType": "image",
                   "image": "/images/home/slider3.png",
                   "layout": "image-left",
-                  "columns": "",
-                  "items": [],
                   "imageProportion": "ratio-5-5",
-                  "bordering": true
+                  "faqItems": [],
+                  "backgroundImage": "",
+                  "backgroundOverlay": "",
+                  "backgroundColor": "",
+                  "minHeight": ""
+                },
+                "gridProps": {
+                  "title": "",
+                  "mainIcon": "",
+                  "secondaryIcon": "",
+                  "subtitle": "",
+                  "items": [],
+                  "cardsLayout": "",
+                  "iconSize": "",
+                  "columns": "",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "",
+                  "backgroundColor": "",
+                  "backgroundImage": "",
+                  "bordering": false
                 }
               }
             ]
@@ -205,7 +277,7 @@
             "ctaLink": "/pages/contact",
             "backgroundColor": "#ffffff",
             "subtitle": "مسیر ما از فهم مسئله شروع می‌شود و با ساخت محصولی کاربردی و قابل اعتماد به پایان می‌رسد.",
-            "layout": "styled",
+            "cardsLayout": "styled",
             "iconSize": "small",
             "ctaColor": "#1EA965"
           }
@@ -248,7 +320,7 @@
             "ctaText": "",
             "ctaLink": "",
             "backgroundColor": "#ffffff",
-            "layout": "vertical-center",
+            "cardsLayout": "vertical-center",
             "iconSize": "large"
           }
         },
@@ -347,7 +419,8 @@
             "align": "right",
             "backgroundColor": "#ffffff",
             "textColor": "#000000",
-            "layout": "image-left"
+            "layout": "image-left",
+            "contentType": "image"
           }
         },
         {
@@ -361,7 +434,10 @@
             "ctaLink": "",
             "align": "right",
             "backgroundColor": "#ffffff",
-            "textColor": "#000000"
+            "textColor": "#000000",
+            "contentType": "image",
+            "layout": "image-right",
+            "imageProportion": "ratio-7-3"
           }
         },
         {
@@ -396,7 +472,7 @@
             "ctaText": "شروع همکاری",
             "ctaLink": "/pages/contact",
             "backgroundColor": "#ffffff",
-            "layout": "styled",
+            "cardsLayout": "styled",
             "backgroundImage": "/images/about/section-bg2.svg"
           }
         },
@@ -412,7 +488,9 @@
             "align": "right",
             "backgroundColor": "#ffffff",
             "textColor": "#000000",
-            "imageProportion": "ratio-8-2"
+            "imageProportion": "ratio-8-2",
+            "contentType": "image",
+            "layout": "image-right"
           }
         },
         {
@@ -516,7 +594,7 @@
             "ctaLink": "",
             "backgroundColor": "#ffffff",
             "iconSize": "large",
-            "layout": "horizontal"
+            "cardsLayout": "horizontal"
           }
         },
         {
@@ -845,7 +923,7 @@
             "ctaLink": "/contact",
             "backgroundColor": "#ffffff",
             "mainIcon": "/images/services/list-icon1.svg",
-            "layout": "simple",
+            "cardsLayout": "simple",
             "secondaryIcon": "/images/services/digikala-services.svg",
             "bordering": true
           }

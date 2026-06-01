@@ -1,4 +1,5 @@
 import { fieldRegistry } from '../fieldRegistry';
+import { shouldShowField } from '../../../utils/shouldShowField';
 
 export default function ArrayField({ field, value = [], onChange }) {
   const handleItemChange = (index, key, newValue) => {
@@ -44,8 +45,9 @@ export default function ArrayField({ field, value = [], onChange }) {
       {value.map((item, index) => (
         <div key={index} className="editor-array-item">
           {field.itemfields.map((subField) => {
-            const SubComponent = fieldRegistry[subField.type];
+            if (!shouldShowField(subField, item)) return null;
 
+            const SubComponent = fieldRegistry[subField.type];
             if (!SubComponent) return null;
 
             return (

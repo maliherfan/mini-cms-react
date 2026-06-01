@@ -1,4 +1,5 @@
 import { fieldRegistry } from '../fieldRegistry';
+import { shouldShowField } from '../../../utils/shouldShowField';
 
 export default function ObjectField({ field, value = {}, onChange }) {
   const handleFieldChange = (key, newValue) => {
@@ -15,6 +16,8 @@ export default function ObjectField({ field, value = {}, onChange }) {
       )}
       <div className="editor-object-content">
         {(field.fields || []).map((subField) => {
+          if (!shouldShowField(subField, value)) return null;
+
           const SubComponent = fieldRegistry[subField.type];
           if (!SubComponent) return null;
 

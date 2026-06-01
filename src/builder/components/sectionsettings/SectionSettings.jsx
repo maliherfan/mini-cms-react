@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { fieldRegistry } from './fieldRegistry';
 import { useEditorStore } from '../../../store/useEditorStore';
 import { sectionSchemas } from '../../../sections/schemas/sectionSchemas';
+import { shouldShowField } from '../../utils/shouldShowField';
 import '../../styles/builder.css';
 
 function SectionSettings() {
@@ -23,6 +24,8 @@ function SectionSettings() {
     );
   }
 
+  const values = selectedSection.props || {};
+
   return (
     <div className="section-settings">
       <h3 className="section-settings-title">
@@ -30,8 +33,9 @@ function SectionSettings() {
       </h3>
 
       {selectedSchema.map((field) => {
-        const FieldComponent = fieldRegistry[field.type];
+        if (!shouldShowField(field, values)) return null;
 
+        const FieldComponent = fieldRegistry[field.type];
         if (!FieldComponent) return null;
 
         return (

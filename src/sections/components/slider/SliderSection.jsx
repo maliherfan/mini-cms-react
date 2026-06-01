@@ -13,14 +13,19 @@ export default function SliderSection({ slides = [], title, sectionBg }) {
     setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
 
   const currentSlide = slides[currentIndex];
-  const slideProps = currentSlide.props || {};
 
   const renderSlide = () => {
+    if (!currentSlide) return null;
+
     if (currentSlide.type === 'grid') {
-      return <GridSection {...slideProps} />;
+      return <GridSection {...(currentSlide.gridProps || {})} />;
     }
-    // default
-    return <ContentSection {...slideProps} />;
+
+    if (currentSlide.type === 'content') {
+      return <ContentSection {...(currentSlide.contentProps || {})} />;
+    }
+
+    return null;
   };
 
   return (

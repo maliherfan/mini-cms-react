@@ -6,10 +6,13 @@ export const contentFields = [
     name: 'textAlign',
     label: 'تراز متن',
     type: 'select',
-    options: ['right', 'center', 'left'],
+    options: ['none', 'right', 'center', 'left'],
   },
   { name: 'textColor', label: 'رنگ متن', type: 'color' },
 
+  { name: 'ctaText', label: 'متن دکمه', type: 'text' },
+  { name: 'ctaLink', label: 'لینک دکمه', type: 'text' },
+  { name: 'ctaColor', label: 'رنگ دکمه', type: 'color' },
   {
     name: 'customItems',
     label: 'آیتم‌های لیست',
@@ -20,30 +23,41 @@ export const contentFields = [
       { name: 'text', label: 'توضیحات (اختیاری)', type: 'textarea' },
     ],
   },
-  { name: 'ctaText', label: 'متن دکمه', type: 'text' },
-  { name: 'ctaLink', label: 'لینک دکمه', type: 'text' },
-  { name: 'ctaColor', label: 'رنگ دکمه', type: 'color' },
 
   {
     name: 'contentType',
     label: 'نوع محتوا',
     type: 'select',
-    options: ['image', 'faq'],
+    options: ['none', 'image', 'faq'],
   },
 
-  { name: 'image', label: 'تصویر', type: 'image' },
+  {
+    name: 'image',
+    label: 'تصویر',
+    type: 'image',
+    showWhen: { field: 'contentType', equals: 'image' },
+  },
   {
     name: 'layout',
     label: 'چیدمان (عکس)',
     type: 'select',
-    options: ['image-right', 'image-left', 'image-top'],
+    options: ['none', 'image-right', 'image-left', 'image-top'],
+    showWhen: { field: 'contentType', equals: 'image' },
   },
 
   {
     name: 'imageProportion',
     type: 'select',
     label: 'نسبت متن به عکس',
-    options: ['ratio-8-2', 'ratio-7-3', 'ratio-6-4', 'ratio-5-5', 'ratio-4-6'],
+    options: [
+      'none',
+      'ratio-8-2',
+      'ratio-7-3',
+      'ratio-6-4',
+      'ratio-5-5',
+      'ratio-4-6',
+    ],
+    showWhen: { field: 'contentType', equals: 'image' },
   },
 
   {
@@ -54,6 +68,7 @@ export const contentFields = [
       { name: 'question', label: 'سوال', type: 'text' },
       { name: 'answer', label: 'پاسخ', type: 'textarea' },
     ],
+    showWhen: { field: 'contentType', equals: 'faq' },
   },
   { name: 'backgroundImage', type: 'image', label: 'تصویر پس‌زمینه' },
   { name: 'backgroundOverlay', type: 'color', label: 'رنگ لایه پس‌زمینه' },
@@ -67,12 +82,6 @@ export const gridFields = [
   { name: 'secondaryIcon', label: 'آیکن ثانویه ', type: 'image' },
   { name: 'subtitle', label: 'متن', type: 'textarea' },
   {
-    name: 'layout',
-    label: 'نوع چیدمان کارت‌ها',
-    type: 'select',
-    options: ['simple', 'horizontal', 'vertical-center', 'styled'],
-  },
-  {
     name: 'items',
     label: 'آیتم‌ها',
     type: 'array',
@@ -83,6 +92,12 @@ export const gridFields = [
       { name: 'backgroundImage', label: 'تصویر پس‌زمینه', type: 'image' },
       { name: 'backgroundColor', label: 'رنگ پس‌زمینه', type: 'color' },
     ],
+  },
+  {
+    name: 'cardsLayout',
+    label: 'نوع چیدمان کارت‌ها',
+    type: 'select',
+    options: ['simple', 'horizontal', 'vertical-center', 'styled'],
   },
   {
     name: 'iconSize',
@@ -106,66 +121,68 @@ export const gridFields = [
   { name: 'bordering', label: 'کادربندی', type: 'switch' },
 ];
 
+const headerFields = [
+  { name: 'logo', label: 'لوگو', type: 'image' },
+
+  {
+    name: 'menuItems',
+    label: 'آیتم‌های منو',
+    type: 'array',
+    itemfields: [
+      { name: 'label', label: 'عنوان', type: 'text' },
+      { name: 'link', label: 'لینک', type: 'text' },
+    ],
+  },
+
+  { name: 'backgroundColor', label: 'رنگ پس‌زمینه', type: 'color' },
+  { name: 'textColor', label: 'رنگ متن', type: 'color' },
+  { name: 'sticky', label: 'هدر چسبان', type: 'switch' },
+];
+
+const faqFields = [
+  { name: 'title', label: 'عنوان بخش', type: 'text' },
+
+  {
+    name: 'items',
+    label: 'سوالات',
+    type: 'array',
+    itemfields: [
+      { name: 'question', label: 'سوال', type: 'text' },
+      { name: 'answer', label: 'پاسخ', type: 'textarea' },
+    ],
+  },
+
+  { name: 'backgroundColor', label: 'رنگ پس‌زمینه', type: 'color' },
+];
+
+const footerFields = [
+  { name: 'logo', label: 'لوگو', type: 'image' },
+  { name: 'description', label: 'توضیح کوتاه', type: 'textarea' },
+
+  {
+    name: 'socialLinks',
+    label: 'شبکه‌های اجتماعی',
+    type: 'array',
+    itemfields: [
+      {
+        name: 'icon',
+        label: 'آیکن',
+        type: 'image',
+      },
+      { name: 'link', label: 'لینک', type: 'text' },
+    ],
+  },
+
+  { name: 'backgroundColor', label: 'رنگ پس‌زمینه', type: 'color' },
+  { name: 'textColor', label: 'رنگ متن', type: 'color' },
+];
+
 export const sectionSchemas = {
-  header: [
-    { name: 'logo', label: 'لوگو', type: 'image' },
-
-    {
-      name: 'menuItems',
-      label: 'آیتم‌های منو',
-      type: 'array',
-      itemfields: [
-        { name: 'label', label: 'عنوان', type: 'text' },
-        { name: 'link', label: 'لینک', type: 'text' },
-      ],
-    },
-
-    { name: 'backgroundColor', label: 'رنگ پس‌زمینه', type: 'color' },
-    { name: 'textColor', label: 'رنگ متن', type: 'color' },
-    { name: 'sticky', label: 'هدر چسبان', type: 'switch' },
-  ],
-
+  header: headerFields,
   content: contentFields,
-
   grid: gridFields,
-
-  faq: [
-    { name: 'title', label: 'عنوان بخش', type: 'text' },
-
-    {
-      name: 'items',
-      label: 'سوالات',
-      type: 'array',
-      itemfields: [
-        { name: 'question', label: 'سوال', type: 'text' },
-        { name: 'answer', label: 'پاسخ', type: 'textarea' },
-      ],
-    },
-
-    { name: 'backgroundColor', label: 'رنگ پس‌زمینه', type: 'color' },
-  ],
-
-  footer: [
-    { name: 'logo', label: 'لوگو', type: 'image' },
-    { name: 'description', label: 'توضیح کوتاه', type: 'textarea' },
-
-    {
-      name: 'socialLinks',
-      label: 'شبکه‌های اجتماعی',
-      type: 'array',
-      itemfields: [
-        {
-          name: 'icon',
-          label: 'آیکن',
-          type: 'image',
-        },
-        { name: 'link', label: 'لینک', type: 'text' },
-      ],
-    },
-
-    { name: 'backgroundColor', label: 'رنگ پس‌زمینه', type: 'color' },
-    { name: 'textColor', label: 'رنگ متن', type: 'color' },
-  ],
+  faq: faqFields,
+  footer: footerFields,
 
   slider: [
     { name: 'title', label: 'عنوان کل اسلایدر', type: 'text' },
@@ -179,34 +196,27 @@ export const sectionSchemas = {
           name: 'type',
           label: 'نوع اسلاید',
           type: 'select',
-          options: ['content', 'grid'],
+          options: ['none', 'content', 'grid'],
         },
         {
-          name: 'props',
-          label: 'تنظیمات محتوای اسلاید',
+          name: 'contentProps',
+          label: 'تنظیمات اسلاید محتوایی',
           type: 'object',
-          fields: [...contentFields, ...gridFields],
-          //   fields: [
-          //   // فیلدهای مشترک
-          //   { name: 'title', label: 'عنوان اسلاید', type: 'text' },
-          //   { name: 'subtitle', label: 'توضیحات', type: 'textarea' },
-          //   { name: 'backgroundColor', label: 'رنگ پس‌زمینه اسلاید', type: 'color' },
-          //   // فیلدهای مختص Content
-          //   { name: 'image', label: 'تصویر (برای نوع محتوا)', type: 'image' },
-          //   { name: 'layout', label: 'چیدمان تصویر', type: 'select', options: ['image-right', 'image-left', 'image-top'] },
-          //   // فیلدهای مختص Grid
-          //   { name: 'columns', label: 'تعداد ستون (برای نوع گرید)', type: 'select', options: ['2', '3', '4', '5'] },
-          //   {
-          //     name: 'items',
-          //     label: 'آیتم‌های گرید',
-          //     type: 'array',
-          //     itemfields: [
-          //       { name: 'title', label: 'عنوان', type: 'text' },
-          //       { name: 'text', label: 'توضیح', type: 'textarea' },
-          //       { name: 'icon', label: 'آیکن', type: 'image' },
-          //     ],
-          //   },
-          // ],
+          fields: contentFields,
+          showWhen: {
+            field: 'type',
+            equals: 'content',
+          },
+        },
+        {
+          name: 'gridProps',
+          label: 'تنظیمات اسلاید گریدی',
+          type: 'object',
+          fields: gridFields,
+          showWhen: {
+            field: 'type',
+            equals: 'grid',
+          },
         },
       ],
     },

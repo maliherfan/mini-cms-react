@@ -16,7 +16,7 @@ export default function ContentSection({
   backgroundOverlay = 'rgba(0, 0, 0, 0.4)',
   minHeight = '320px',
   backgroundColor,
-  contentType = 'image',
+  contentType = 'none',
   faqItems = [],
   customItems = [],
 }) {
