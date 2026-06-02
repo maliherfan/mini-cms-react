@@ -1,92 +1,98 @@
 import '../../styles/sections.css';
+import './grid.css';
 
-export default function GridSection({
-  mainIcon,
-  secondaryIcon,
-  title,
-  subtitle,
-  items = [],
-  columns = 3,
-  ctaText,
-  ctaLink,
-  ctaColor,
-  backgroundColor,
-  backgroundImage,
-  cardsLayout = 'simple',
-  iconSize = 'medium',
-  bordering = false,
-}) {
+export default function GridSection(props) {
+  const {
+    mainIcon,
+    secondaryIcon,
+    title,
+    subtitle,
+    items = [],
+    columns = 3,
+    ctaText,
+    ctaLink,
+    ctaColor,
+    backgroundColor,
+    backgroundImage,
+    cardsLayout = 'simple',
+    cardsStyled = false,
+    iconSize = 'medium',
+    bordering = false,
+  } = props;
+
+  const cssVars = {
+    '--grid-bg': backgroundColor,
+    '--grid-bg-image': backgroundImage ? `url(${backgroundImage})` : 'none',
+    '--grid-cols': columns,
+    '--grid-cta-bg': ctaColor,
+  };
   return (
-    <section
-      className="section"
-      style={{
-        backgroundColor,
-        backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-      }}
-    >
+    <section className="section grid-section" style={cssVars}>
       <div className={`container ${bordering ? 'bordered-grid' : ''}`}>
         {mainIcon ? (
           <div className="grid-header-styled">
             <div className="header-title-row">
               <div className="header-title-row-primary">
                 <img src={mainIcon} className="main-section-icon" alt="" />
-                {title && <h2>{title}</h2>}
+                {title && <h2 className="section-title">{title}</h2>}
               </div>
               {secondaryIcon && <img src={secondaryIcon} alt="" />}
             </div>
             {subtitle && (
-              <p className="content-subtitle section-description">{subtitle}</p>
+              <p className="section-subtitle section-description">{subtitle}</p>
             )}
           </div>
         ) : (
           <div className="grid-header-simple">
-            {title && <h2 className="content-title">{title}</h2>}
-            {subtitle && <p className="content-subtitle">{subtitle}</p>}
+            {title && <h2 className="section-title">{title}</h2>}
+            {subtitle && <p className="section-subtitle">{subtitle}</p>}
           </div>
         )}
-        <div
-          className="grid-wrapper"
-          style={{
-            gridTemplateColumns: `repeat(${columns}, 1fr)`,
-          }}
-        >
-          {items.map((item, i) => (
-            <div
-              key={i}
-              className={`grid-card layout-${cardsLayout} ${!!item.backgroundImage ? 'has-card-bg' : ''}`}
-              style={{
-                backgroundColor: item.backgroundColor,
-                backgroundImage: item.backgroundImage
-                  ? `url(${item.backgroundImage})`
-                  : 'none',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-              }}
-            >
-              {item.icon && (
-                <img
-                  src={item.icon}
-                  alt={item.title || 'card-icon'}
-                  className={`size-${iconSize}`}
-                />
-              )}
-              <div className="grid-card-content">
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
+        <div className="grid-wrapper">
+          {items.map((item, i) => {
+            const cardVars = {
+              '--card-bg': item.backgroundColor,
+              '--card-bg-image': item.backgroundImage
+                ? `url(${item.backgroundImage})`
+                : 'none',
+            };
+            return (
+              <div
+                key={i}
+                className={`grid-card layout-${cardsLayout}  ${cardsStyled ? 'card-styled' : ''} ${!!item.backgroundImage ? 'has-card-bg' : ''}`}
+                style={cardVars}
+              >
+                {cardsLayout === 'mixed' ? (
+                  <div className="grid-card-header">
+                    {item.icon && (
+                      <img
+                        src={item.icon}
+                        alt={item.title || 'card-icon'}
+                        className={`size-${iconSize}`}
+                      />
+                    )}
+                    <h3>{item.title}</h3>
+                  </div>
+                ) : (
+                  item.icon && (
+                    <img
+                      src={item.icon}
+                      alt={item.title || 'card-icon'}
+                      className={`size-${iconSize}`}
+                    />
+                  )
+                )}
+                <div className="grid-card-content">
+                  {cardsLayout !== 'mixed' && <h3>{item.title}</h3>}
+                  <p>{item.text}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {ctaText && ctaLink && (
-          <a
-            className="grid-cta"
-            href={ctaLink || '#'}
-            style={{ background: ctaColor }}
-          >
+          <a className="grid-cta" href={ctaLink || '#'}>
             {ctaText}
           </a>
         )}

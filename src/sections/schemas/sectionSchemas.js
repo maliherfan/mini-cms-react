@@ -97,8 +97,9 @@ export const gridFields = [
     name: 'cardsLayout',
     label: 'نوع چیدمان کارت‌ها',
     type: 'select',
-    options: ['simple', 'horizontal', 'vertical-center', 'styled'],
+    options: ['simple', 'horizontal', 'vertical-center', 'mixed'],
   },
+  { name: 'cardsStyled', label: 'استایل دهی کارت ها', type: 'switch' },
   {
     name: 'iconSize',
     label: 'سایز آیکون‌ها',

@@ -1,16 +1,47 @@
-# React + Vite
+🚀 Website Builder Engine
+این پروژه یک موتور ویرایشگر صفحات وب (Website Builder) است که با هدف پیاده‌سازی یک راهکار منعطف برای مدیریت و نمایش داینامیک سکشن‌های مختلف طراحی شده است. تمرکز اصلی پروژه بر معماری ماژولار (Scalable Architecture) و قابلیت اضافه کردن کامپوننت‌های جدید بدون تغییر در هسته مرکزی سیستم است.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🛠 تکنولوژی‌های مورد استفاده
+Core: React.js
+Styling: Plain CSS organized in separate component-level stylesheet files for maintainability and scalability.
+State Management: Editor/UI state is managed with Zustand via useEditorStore, Server state (pages CRUD, async state) is handled using a dedicated React hook usePages.
+Persistence: JSON-Server
+Deployment: [نام پلتفرم مثلا Vercel یا Netlify]
+✨ ویژگی‌های کلیدی (Key Features)
+۱. پنل مدیریت (Admin Dashboard)
+مدیریت صفحات (CRUD): قابلیت ایجاد، ویرایش و حذف صفحات با slug اختصاصی.
+Visual Builder: امکان انتخاب و چیدمان سکشن‌های مختلف (Hero, Grid, Slider, Content, Footer).
+Reordering: قابلیت جابه‌جایی ترتیب سکشن‌ها با استفاده از دکمه‌های کنترلی (Up/Down).
+Live Edit: با کلیک روی هر سکشن، فرم تنظیمات باز شده و تغییرات (متن، رنگ، عکس) به صورت آنی مدیریت می‌شوند.
+۲. نمای عمومی (Public View)
+رندر هوشمند صفحات بر اساس داده‌های دریافت شده از سرور.
+استفاده از ساختار PageRenderer واحد برای جلوگیری از تکرار کد (DRY Principle).
+طراحی کاملاً Responsive و بهینه شده برای تمام نمایشگرها.
+🏗 معماری و اصول توسعه (Architecture)
+این پروژه بر اساس اصول SOLID و الگوی Open-Closed طراحی شده است:
 
-Currently, two official plugins are available:
+Extensibility: برای اضافه کردن یک سکشن جدید (مثلاً FAQ)، تنها کافیست کامپوننت آن تعریف شده و به مپینگ سیستم اضافه شود؛ بدون اینکه نیاز به دستکاری در منطق هسته Builder باشد.
+Clean Code: جداسازی کامل لایه Logic از لایه UI.
+Component-Based: تمام اجزا (Grid, Slider, SectionHeader) به صورت کامپوننت‌های مستقل و Reuseable طراحی شده‌اند.
+🚀 راه اندازی پروژه
+۱. نصب وابستگی‌ها:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+bash
+npm install
+۲. اجرای سرور مجازی (JSON-Server):
 
-## React Compiler
+bash
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# در یک ترمینال مجزا
 
-## Expanding the ESLint configuration
+npm run server
+۳. اجرای پروژه در حالت توسعه:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+bash
+npm run dev
+🔗 لینک‌های پروژه
+نسخه لایو: [لینک دمو را اینجا قرار دهید]
+مخزن گیت‌هاب: [لینک مخزن را اینجا قرار دهید]
+توسعه داده شده توسط: [ملیحه عرفان منش]
+
+ارائه شده به: تیم فنی کاریار استودیو

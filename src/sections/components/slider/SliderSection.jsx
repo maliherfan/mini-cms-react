@@ -2,8 +2,10 @@ import { useState } from 'react';
 import ContentSection from '../content/ContentSection';
 import GridSection from '../grid/GridSection';
 import '../../styles/sections.css';
+import './slider.css';
 
-export default function SliderSection({ slides = [], title, sectionBg }) {
+export default function SliderSection(props) {
+  const { slides = [], title, backgroundColor } = props;
   const [currentIndex, setCurrentIndex] = useState(0);
 
   if (!slides || slides.length === 0) return null;
@@ -28,11 +30,12 @@ export default function SliderSection({ slides = [], title, sectionBg }) {
     return null;
   };
 
+  const cssVars = {
+    '--slider-bg': backgroundColor,
+  };
+
   return (
-    <section
-      className="section slider-parent"
-      style={{ backgroundColor: sectionBg }}
-    >
+    <section className="section slider-section" style={cssVars}>
       <div className="container">
         {title && <h2 className="slider-main-title">{title}</h2>}
 
@@ -41,16 +44,20 @@ export default function SliderSection({ slides = [], title, sectionBg }) {
             type="button"
             className="slider-nav-btn prev"
             onClick={prevSlide}
+            aria-label="Previous slide"
           >
             ‹
           </button>
 
-          <div className="slider-active-content">{renderSlide()}</div>
+          <div className="slider-active-content">
+            <div className="slider-slide-frame">{renderSlide()}</div>
+          </div>
 
           <button
             type="button"
             className="slider-nav-btn next"
             onClick={nextSlide}
+            aria-label="Next slide"
           >
             ›
           </button>
@@ -58,10 +65,12 @@ export default function SliderSection({ slides = [], title, sectionBg }) {
 
         <div className="slider-pagination">
           {slides.map((_, idx) => (
-            <span
+            <button
               key={idx}
+              type="button"
               className={`dot ${idx === currentIndex ? 'active' : ''}`}
               onClick={() => setCurrentIndex(idx)}
+              aria-label={`Go to slide ${idx + 1}`}
             />
           ))}
         </div>

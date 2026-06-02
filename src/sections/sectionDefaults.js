@@ -33,6 +33,7 @@ export const createDefaultGridProps = () => ({
     },
   ],
   cardsLayout: 'simple',
+  cardsStyled:false,
   iconSize: 'medium',
   columns: '3',
   ctaText: 'شروع همکاری',

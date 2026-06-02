@@ -122,7 +122,8 @@
             "backgroundColor": "#ffffff",
             "cardsLayout": "horizontal",
             "ctaColor": "#1EA965",
-            "iconSize": "large"
+            "iconSize": "large",
+            "cardsStyled": true
           }
         },
         {
@@ -136,7 +137,7 @@
                 "type": "content",
                 "contentProps": {
                   "title": "اپلیکیشن ماکاپ‌های پولی",
-                  "subtitle": "یک اپلیکیشن حرفه‌ای برای دریافت ماکاپ‌های پریمیوم طراحی کردیم. تمرکز این پروژه روی تجربه کاربری روان، دسته‌بندی هوشمند و ارائه محتوای اختصاصی با کیفیت بالا بود؛ طراحان بتونن سریع، راحت و مطمئن به منابع پولی و حرفه‌ای دسترسی داشته باشن.\nیک اپلیکیشن حرفه‌ای برای دریافت ماکاپ‌های پریمیوم طراحی کردیم. تمرکز این پروژه روی تجربه کاربری روان، دسته‌بندی هوشمند و ارائه محتوای اختصاصی با کیفیت بالا بود؛",
+                  "subtitle": "یک اپلیکیشن حرفه‌ای برای دریافت ماکاپ‌های پریمیوم طراحی کردیم. تمرکز این پروژه روی تجربه کاربری روان، دسته‌بندی هوشمند و ارائه محتوای اختصاصی با کیفیت بالا بود؛ طراحان بتونن سریع، راحت و مطمئن به منابع پولی و حرفه‌ای دسترسی داشته باشن.\nیک اپلیکیشن حرفه‌ای برای دریافت ماکاپ‌های پریمیوم طراحی کردیم. تمرکز این پروژه روی تجربه کاربری روان، دسته‌بندی هوشمند و ارائه محتوای اختصاصی با کیفیت بالا بود؛\n",
                   "textAlign": "",
                   "textColor": "",
                   "ctaText": "",
@@ -144,7 +145,7 @@
                   "ctaColor": "",
                   "customItems": [],
                   "contentType": "image",
-                  "image": "/images/home/slider1.png",
+                  "image": "/images/home/slider1.svg",
                   "layout": "image-left",
                   "imageProportion": "ratio-5-5",
                   "faqItems": [],
@@ -182,7 +183,7 @@
                   "ctaColor": "",
                   "customItems": [],
                   "contentType": "image",
-                  "image": "/images/home/slider2.png",
+                  "image": "/images/home/slider2.svg",
                   "layout": "image-left",
                   "imageProportion": "ratio-5-5",
                   "faqItems": [],
@@ -211,8 +212,8 @@
               {
                 "type": "content",
                 "contentProps": {
-                  "title": "سایت ماکاپ‌های رایگان",
-                  "subtitle": "سایتی طراحی کردیم که دسترسی سریع و ساده به مجموعه‌ای از ماکاپ‌های رایگان و باکیفیت رو برای طراحان فراهم می‌کنه. هدف این محصول، ایجاد یک تجربه روان و بدون دردسر برای پیدا کردن ماکاپ مناسب بود؛ جایی که کاربر بدون جست‌وجوی طولانی، مستقیماً به چیزی که نیاز داره برسه.",
+                  "title": "پلتفرم ماکاپ‌های رایگان",
+                  "subtitle": "پلتفرم طراحی کردیم که دسترسی سریع و ساده به مجموعه‌ای از ماکاپ‌های رایگان و باکیفیت رو برای طراحان فراهم می‌کنه. \nهدف این محصول، ایجاد یک تجربه روان و بدون دردسر برای پیدا کردن ماکاپ مناسب بود؛ جایی که کاربر بدون جست‌وجوی طولانی، مستقیماً به چیزی که نیاز داره برسه.",
                   "textAlign": "",
                   "textColor": "",
                   "ctaText": "",
@@ -220,7 +221,7 @@
                   "ctaColor": "",
                   "customItems": [],
                   "contentType": "image",
-                  "image": "/images/home/slider3.png",
+                  "image": "/images/home/slider3.svg",
                   "layout": "image-left",
                   "imageProportion": "ratio-5-5",
                   "faqItems": [],
@@ -277,9 +278,10 @@
             "ctaLink": "/pages/contact",
             "backgroundColor": "#ffffff",
             "subtitle": "مسیر ما از فهم مسئله شروع می‌شود و با ساخت محصولی کاربردی و قابل اعتماد به پایان می‌رسد.",
-            "cardsLayout": "styled",
+            "cardsLayout": "mixed",
             "iconSize": "small",
-            "ctaColor": "#1EA965"
+            "ctaColor": "#1EA965",
+            "cardsStyled": true
           }
         },
         {
@@ -473,7 +475,8 @@
             "ctaLink": "/pages/contact",
             "backgroundColor": "#ffffff",
             "cardsLayout": "styled",
-            "backgroundImage": "/images/about/section-bg2.svg"
+            "backgroundImage": "/images/about/section-bg2.svg",
+            "cardsStyled": true
           }
         },
         {

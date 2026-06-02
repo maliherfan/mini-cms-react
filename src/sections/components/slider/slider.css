@@ -1,0 +1,113 @@
+.slider-section {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--slider-bg, transparent);
+}
+
+.slider-main-title {
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.slider-horizontal-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.slider-active-content {
+  flex: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.slider-slide-frame {
+  padding: 32px 24px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 20px #9191911f;
+  border-radius: 20px;
+  height: 450px;
+  overflow: auto;
+}
+
+.slider-slide-frame .section {
+  padding: 0;
+}
+
+/* prev next btn */
+.slider-nav-btn {
+  background: #f6f6f6;
+  border: none;
+  outline: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.slider-nav-btn:hover {
+  background: #1ea965;
+  color: white;
+}
+
+/* dots pagination */
+.slider-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.slider-pagination .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ededed;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 0;
+  padding: 0;
+}
+
+.slider-pagination .dot.active {
+  background: #1ea965;
+  width: 25px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .slider-slide-frame {
+    padding: 16px;
+  }
+
+  .slider-slide-frame .content-section .content-inner {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .slider-slide-frame .content-section .content-inner .section-title {
+    margin-bottom: 0px;
+  }
+  .slider-slide-frame .content-section .content-inner .section-subtitle {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+  }
+  .slider-main-title {
+    font-size: 18px;
+  }
+  .slider-nav-btn {
+    display: none;
+  }
+}

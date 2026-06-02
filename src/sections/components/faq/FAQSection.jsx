@@ -1,12 +1,16 @@
-import '../../styles/sections.css';
 import { useState } from 'react';
+import '../../styles/sections.css';
+import './faq.css';
 
-export default function FAQSection({ title, items = [], backgroundColor }) {
+export default function FAQSection(props) {
+  const { title, items = [], backgroundColor } = props;
   const [openIndex, setOpenIndex] = useState(null);
-
+  const cssVars = {
+    '--faq-bg': backgroundColor,
+  };
   return (
-    <div className="faq-component" style={{ backgroundColor }}>
-      {title && <h3 className="faq-component-title">{title}</h3>}
+    <div className="faq-section" style={cssVars}>
+      {title && <h3 className="faq-title">{title}</h3>}
       <div className="faq-container">
         {items.map((item, i) => (
           <div key={i} className="faq-item">
@@ -20,7 +24,11 @@ export default function FAQSection({ title, items = [], backgroundColor }) {
               {item.question}
             </button>
 
-            {openIndex === i && <div id={`faq-answer-${i}`  } className="faq-answer">{item.answer}</div>}
+            {openIndex === i && (
+              <div id={`faq-answer-${i}`} className="faq-answer">
+                {item.answer}
+              </div>
+            )}
           </div>
         ))}
       </div>
