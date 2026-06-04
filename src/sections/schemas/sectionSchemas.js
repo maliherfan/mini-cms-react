@@ -187,11 +187,34 @@ export const sectionSchemas = {
 
   slider: [
     { name: 'title', label: 'عنوان کل اسلایدر', type: 'text' },
-    { name: 'sectionBg', label: 'رنگ پس‌زمینه بخش اسلایدر', type: 'color' },
+    { name: 'subtitle', label: 'توضیحات', type: 'textarea' },
+    {
+      name: 'backgroundColor',
+      label: 'رنگ پس‌زمینه بخش اسلایدر',
+      type: 'color',
+    },
+    {
+      name: 'variant',
+      label: 'نوع نمایش اسلایدر',
+      type: 'select',
+      options: ['single', 'cards', 'testimonial'],
+    },
+    { name: 'autoplay', label: 'اسلاید خودکار', type: 'switch' },
+    {
+      name: 'autoplayDelay',
+      label: 'تاخیر (ms)',
+      type: 'text',
+      showWhen: { field: 'autoplay', equals: true },
+    },
+
+    { name: 'showArrows', label: 'نمایش دکمه های قبل و بعد', type: 'switch' },
+    { name: 'showDots', label: 'نمایش دکمه های pagination', type: 'switch' },
+
     {
       name: 'slides',
       label: 'اسلایدها',
       type: 'array',
+      showWhen: { field: 'variant', equals: 'single' },
       itemfields: [
         {
           name: 'type',
@@ -201,25 +224,33 @@ export const sectionSchemas = {
         },
         {
           name: 'contentProps',
-          label: 'تنظیمات اسلاید محتوایی',
+          label: 'تنظیمات اسلایدر محتوایی',
           type: 'object',
           fields: contentFields,
-          showWhen: {
-            field: 'type',
-            equals: 'content',
-          },
+          showWhen: { field: 'type', equals: 'content' },
         },
         {
           name: 'gridProps',
-          label: 'تنظیمات اسلاید گریدی',
+          label: 'تنظیمات اسلایدر گریدی',
           type: 'object',
           fields: gridFields,
-          showWhen: {
-            field: 'type',
-            equals: 'grid',
-          },
+          showWhen: { field: 'type', equals: 'grid' },
         },
       ],
+    },
+
+    {
+      name: 'cardsPerSlide',
+      label: 'تعداد کارت در هر حرکت',
+      type: 'select',      
+      options: ['1', '2', '3', '4', '5', '6'],
+    },
+
+    {
+      name: 'cards',
+      label: 'کارت‌ها',
+      type: 'object',
+      fields: gridFields,
     },
   ],
 };

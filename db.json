@@ -56,46 +56,119 @@
           }
         },
         {
-          "id": "sec_1779290897990",
-          "type": "grid",
+          "id": "sec_1780465320033",
+          "type": "slider",
           "props": {
             "title": "",
-            "items": [
+            "backgroundColor": "",
+            "variant": "cards",
+            "autoplay": true,
+            "autoplayDelay": "3000",
+            "slides": [
               {
-                "image": "",
-                "title": "",
-                "text": "",
-                "link": "#",
-                "icon": "/images/home/digikala-icon.svg",
-                "badge": ""
-              },
-              {
-                "image": "",
-                "title": "",
-                "text": "",
-                "link": "",
-                "icon": "/images/home/karyar-icon.svg"
-              },
-              {
-                "icon": "/images/home/akeep-icon.svg",
-                "title": "",
-                "text": ""
-              },
-              {
-                "icon": "/images/home/sp-icon.svg",
-                "title": "",
-                "text": ""
-              },
-              {
-                "icon": "/images/home/divar-icon.svg",
-                "title": "",
-                "text": ""
+                "type": "content",
+                "contentProps": {
+                  "title": "عنوان اسلاید محتوایی",
+                  "subtitle": "توضیحات اسلاید محتوایی",
+                  "textAlign": "right",
+                  "textColor": "#1f2937",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "#f59e0b",
+                  "customItems": [],
+                  "contentType": "none",
+                  "image": "",
+                  "layout": "image-right",
+                  "imageProportion": "ratio-7-3",
+                  "faqItems": [],
+                  "backgroundImage": "",
+                  "backgroundOverlay": "rgba(0, 0, 0, 0.4)",
+                  "backgroundColor": "#ffffff",
+                  "minHeight": "320px"
+                },
+                "gridProps": {
+                  "title": "نمونه کارها",
+                  "mainIcon": "",
+                  "secondaryIcon": "",
+                  "subtitle": "توضیحات مربوط به سکشن در اینجا قرار می‌گیرد.",
+                  "items": [
+                    {
+                      "icon": "",
+                      "title": "پروژه شماره یک",
+                      "text": "توضیح کوتاه درباره این پروژه.",
+                      "backgroundImage": "",
+                      "backgroundColor": ""
+                    }
+                  ],
+                  "cardsLayout": "simple",
+                  "cardsStyled": false,
+                  "iconSize": "medium",
+                  "columns": "3",
+                  "ctaText": "شروع همکاری",
+                  "ctaLink": "/contact",
+                  "ctaColor": "#f59e0b",
+                  "backgroundColor": "#ffffff",
+                  "backgroundImage": "",
+                  "bordering": false
+                }
               }
             ],
-            "columns": "5",
-            "backgroundColor": "#ffffff",
-            "ctaText": "",
-            "cardsLayout": "vertical-center"
+            "cardsPerSlide": "5",
+            "cards": {
+              "title": "",
+              "mainIcon": "",
+              "secondaryIcon": "",
+              "subtitle": "",
+              "items": [
+                {
+                  "icon": "/images/home/digikala-icon.svg",
+                  "title": "",
+                  "text": "",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/karyar-icon.svg",
+                  "title": "",
+                  "text": "",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/akeep-icon.svg",
+                  "title": "",
+                  "text": "",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/sp-icon.svg",
+                  "title": "",
+                  "text": "",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/divar-icon.svg",
+                  "title": "",
+                  "text": "",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                }
+              ],
+              "cardsLayout": "vertical-center",
+              "cardsStyled": false,
+              "iconSize": "medium",
+              "columns": "5",
+              "ctaText": "",
+              "ctaLink": "/contact",
+              "ctaColor": "#f59e0b",
+              "backgroundColor": "",
+              "backgroundImage": "",
+              "bordering": false
+            },
+            "showArrows": false,
+            "showDots": false
           }
         },
         {
@@ -247,7 +320,8 @@
                   "bordering": false
                 }
               }
-            ]
+            ],
+            "variant": "single"
           }
         },
         {
@@ -285,45 +359,267 @@
           }
         },
         {
-          "id": "sec_1779716645625",
-          "type": "grid",
+          "id": "sec_1780440415525",
+          "type": "slider",
           "props": {
-            "title": "آدم‌هایی که کاریار را معنا می‌کنند",
-            "subtitle": "کاریار استودیو یک تیم متعهد و متخصص است که برای ساخت تجربه‌های ارزشمند کنار هم قرار گرفته‌اند.",
-            "items": [
+            "title": "",
+            "backgroundColor": "",
+            "variant": "cards",
+            "autoplay": true,
+            "autoplayDelay": "3000",
+            "slides": [
               {
-                "image": "",
-                "title": "آلاله حسینی",
-                "text": "طراح سایت",
-                "icon": "/images/home/person1.svg"
-              },
-              {
-                "icon": "/images/home/person2.svg",
-                "title": "مهتاب فرجی",
-                "text": "مدیر پروژه"
-              },
-              {
-                "icon": "/images/home/person3.svg",
-                "title": "فرنوش جمالی",
-                "text": "طراح محصول"
-              },
-              {
-                "icon": "/images/home/person4.svg",
-                "title": "کیان شلیله",
-                "text": "مدیرفنی"
-              },
-              {
-                "icon": "/images/home/person5.svg",
-                "title": "آیدا هاشمی",
-                "text": "طراح سایت"
+                "type": "content",
+                "contentProps": {
+                  "title": "عنوان اسلاید محتوایی",
+                  "subtitle": "توضیحات اسلاید محتوایی",
+                  "textAlign": "right",
+                  "textColor": "#1f2937",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "#f59e0b",
+                  "customItems": [],
+                  "contentType": "none",
+                  "image": "",
+                  "layout": "image-right",
+                  "imageProportion": "ratio-7-3",
+                  "faqItems": [],
+                  "backgroundImage": "",
+                  "backgroundOverlay": "rgba(0, 0, 0, 0.4)",
+                  "backgroundColor": "#ffffff",
+                  "minHeight": "320px"
+                },
+                "gridProps": {
+                  "title": "نمونه کارها",
+                  "mainIcon": "",
+                  "secondaryIcon": "",
+                  "subtitle": "توضیحات مربوط به سکشن در اینجا قرار می‌گیرد.",
+                  "items": [
+                    {
+                      "icon": "",
+                      "title": "پروژه شماره یک",
+                      "text": "توضیح کوتاه درباره این پروژه.",
+                      "backgroundImage": "",
+                      "backgroundColor": ""
+                    }
+                  ],
+                  "cardsLayout": "simple",
+                  "cardsStyled": false,
+                  "iconSize": "medium",
+                  "columns": "3",
+                  "ctaText": "شروع همکاری",
+                  "ctaLink": "/contact",
+                  "ctaColor": "#f59e0b",
+                  "backgroundColor": "#ffffff",
+                  "backgroundImage": "",
+                  "bordering": false
+                }
               }
             ],
-            "columns": "5",
-            "ctaText": "",
-            "ctaLink": "",
-            "backgroundColor": "#ffffff",
-            "cardsLayout": "vertical-center",
-            "iconSize": "large"
+            "cardsPerSlide": "5",
+            "cards": {
+              "title": "آدم‌هایی که کاریار را معنا می‌کنند",
+              "mainIcon": "",
+              "secondaryIcon": "",
+              "subtitle": "کاریار استودیو یک تیم متعهد و متخصص است که برای ساخت تجربه‌های ارزشمند کنار هم قرار گرفته‌اند.",
+              "items": [
+                {
+                  "icon": "/images/home/person1.svg",
+                  "title": "آلاله محسنی",
+                  "text": "طراح سایت",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/person2-colored.svg",
+                  "title": "مهتاب فرجی",
+                  "text": "مدیر پروژه",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/person3-colored.svg",
+                  "title": "فرنوش جمالی",
+                  "text": "طراح محصول",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/person4-colored.svg",
+                  "title": "کیان شلیله",
+                  "text": "مدیر فنی",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/person5-colored.svg",
+                  "title": "آیدا هاشمی",
+                  "text": "طراح سایت",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/person6-colored.svg",
+                  "title": "سامان عباسی",
+                  "text": "طراح سایت",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/person7.svg",
+                  "title": "اعظم جعفری",
+                  "text": "طراح سایت",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                }
+              ],
+              "cardsLayout": "vertical-center",
+              "cardsStyled": false,
+              "iconSize": "large",
+              "columns": "5",
+              "ctaText": "",
+              "ctaLink": "",
+              "ctaColor": "",
+              "backgroundColor": "",
+              "backgroundImage": "",
+              "bordering": false
+            },
+            "showArrows": false,
+            "showDots": true
+          }
+        },
+        {
+          "id": "sec_1780477808916",
+          "type": "slider",
+          "props": {
+            "title": "تجربه همکاری از نگاه مشتریان",
+            "backgroundColor": "",
+            "variant": "testimonial",
+            "autoplay": false,
+            "autoplayDelay": "3000",
+            "showArrows": true,
+            "showDots": true,
+            "slides": [
+              {
+                "type": "grid",
+                "contentProps": {
+                  "title": "عنوان اسلاید محتوایی",
+                  "subtitle": "توضیحات اسلاید محتوایی",
+                  "textAlign": "right",
+                  "textColor": "#1f2937",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "#f59e0b",
+                  "customItems": [],
+                  "contentType": "none",
+                  "image": "",
+                  "layout": "image-right",
+                  "imageProportion": "ratio-7-3",
+                  "faqItems": [],
+                  "backgroundImage": "",
+                  "backgroundOverlay": "rgba(0, 0, 0, 0.4)",
+                  "backgroundColor": "#ffffff",
+                  "minHeight": "320px"
+                },
+                "gridProps": {
+                  "title": "سمانه عزیزی",
+                  "mainIcon": "/images/home/avatar1.svg",
+                  "secondaryIcon": "",
+                  "subtitle": "کاریار استودیو تیمی دقیق و قابل‌اعتماده. توی هر مرحله از پروژه، مسئله رو درست فهمیدن و برای ما یه مسیر واضح و قابل‌اجرا ساختن\nممنونم از این تیم که تو این پروژه همراه بودن و هر لحظه پیگیری این کار رو انجام میدادن",
+                  "items": [],
+                  "cardsLayout": "simple",
+                  "cardsStyled": false,
+                  "iconSize": "medium",
+                  "columns": "3",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "",
+                  "backgroundColor": "",
+                  "backgroundImage": "",
+                  "bordering": false
+                }
+              },
+              {
+                "type": "grid",
+                "contentProps": {
+                  "title": "",
+                  "subtitle": "",
+                  "textAlign": "",
+                  "textColor": "",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "",
+                  "customItems": [],
+                  "contentType": "",
+                  "image": "",
+                  "layout": "",
+                  "imageProportion": "",
+                  "faqItems": [],
+                  "backgroundImage": "",
+                  "backgroundOverlay": "",
+                  "backgroundColor": "",
+                  "minHeight": ""
+                },
+                "gridProps": {
+                  "title": "علی کاظمیان",
+                  "mainIcon": "/images/home/avatar2.svg",
+                  "secondaryIcon": "",
+                  "subtitle": "از تجربه کاربری تا توسعه، همه‌چیز با دقت و سرعت جلو رفت. چیزی که تحویل گرفتیم دقیقاً همون چیزی بود که اول جلسه‌ها ازش حرف می‌زدیم.",
+                  "items": [],
+                  "cardsLayout": "",
+                  "cardsStyled": false,
+                  "iconSize": "",
+                  "columns": "",
+                  "ctaText": "",
+                  "ctaLink": "",
+                  "ctaColor": "",
+                  "backgroundColor": "",
+                  "backgroundImage": "",
+                  "bordering": false
+                }
+              }
+            ],
+            "cardsPerSlide": "2",
+            "cards": {
+              "title": "",
+              "mainIcon": "",
+              "secondaryIcon": "",
+              "subtitle": "",
+              "items": [
+                {
+                  "icon": "/images/home/avatar1.svg",
+                  "title": "سمانه عزیزی",
+                  "text": "کاریار استودیو تیمی دقیق و قابل‌اعتماده. توی هر مرحله از پروژه، مسئله رو درست فهمیدن و برای ما یه مسیر واضح و قابل‌اجرا ساختن ممنونم از این تیم که تو این پروژه همراه بودن و هر لحظه پیگیری این کار رو انجام میدادن",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/avatar2.svg",
+                  "title": "علی کاظمیان",
+                  "text": "از تجربه کاربری تا توسعه، همه‌چیز با دقت و سرعت جلو رفت. چیزی که تحویل گرفتیم دقیقاً همون چیزی بود که اول جلسه‌ها ازش حرف می‌زدیم.",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                },
+                {
+                  "icon": "/images/home/avatar1.svg",
+                  "title": "سمانه عزیزی",
+                  "text": "کاریار استودیو تیمی دقیق و قابل‌اعتماده. توی هر مرحله از پروژه، مسئله رو درست فهمیدن و برای ما یه مسیر واضح و قابل‌اجرا ساختن ممنونم از این تیم که تو این پروژه همراه بودن و هر لحظه پیگیری این کار رو انجام میدادن",
+                  "backgroundImage": "",
+                  "backgroundColor": ""
+                }
+              ],
+              "cardsLayout": "mixed",
+              "cardsStyled": true,
+              "iconSize": "medium",
+              "columns": "2",
+              "ctaText": "",
+              "ctaLink": "/contact",
+              "ctaColor": "#f59e0b",
+              "backgroundColor": "",
+              "backgroundImage": "",
+              "bordering": false
+            },
+            "subtitle": "بخشی از تجربه‌ کسانی که مسیر ساخت محصولشان را با ما شروع کردند."
           }
         },
         {

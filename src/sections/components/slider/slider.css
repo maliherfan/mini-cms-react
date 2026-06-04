@@ -4,11 +4,8 @@
   background-color: var(--slider-bg, transparent);
 }
 
-.slider-main-title {
-  font-weight: 700;
-  font-size: 26px;
+.slider-section .section-title {
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .slider-horizontal-container {
@@ -22,7 +19,7 @@
   transition: all 0.5s ease-in-out;
 }
 
-.slider-slide-frame {
+.variant-single .slider-slide-frame {
   padding: 32px 24px;
   background-color: transparent;
   border: 1px solid #fff;
@@ -32,7 +29,20 @@
   overflow: auto;
 }
 
+.variant-single .slider-slide-frame .section-title {
+  text-align: right;
+}
+
 .slider-slide-frame .section {
+  padding: 0;
+}
+
+.variant-cards .slider-slide-frame {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  height: auto;
+  overflow: visible;
   padding: 0;
 }
 
@@ -49,8 +59,8 @@
   z-index: 10;
   display: flex;
   align-items: center;
-  margin: 20px;
   justify-content: center;
+  margin: 20px;
   transition: all 0.3s ease;
 }
 
@@ -84,9 +94,80 @@
   border-radius: 10px;
 }
 
+.variant-testimonial .slider-layout-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.variant-testimonial .slider-header-block {
+  flex: 0 0 30%;
+  text-align: right;
+}
+
+.variant-testimonial .section-title {
+  text-align: right;
+}
+
+.variant-testimonial .slider-main-area {
+  flex: 0 0 65%;
+}
+
+/* nav buttons specials for Testimonial variant */
+.slider-custom-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.slider-custom-controls .nav-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.slider-custom-controls .nav-btn:hover {
+  border-color: #1ea965;
+  color: #1ea965;
+}
+
+/* hide defaults nav buttons in Testimonial variant */
+.variant-testimonial .slider-nav-btn {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .slider-slide-frame {
     padding: 16px;
+  }
+
+  .variant-testimonial .slider-layout-wrapper {
+    flex-direction: column;
+  }
+
+  .variant-cards .grid-wrapper {
+    --grid-cols: 3;
+    gap: 12px;
+  }
+
+  .variant-testimonial .grid-wrapper {
+    height: 200px;
+    --grid-cols: 1;
+  }
+
+  .variant-testimonial .grid-wrapper .grid-card .grid-card-content p {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .slider-slide-frame .content-section .content-inner {
@@ -104,9 +185,7 @@
     text-overflow: ellipsis;
     font-size: 12px;
   }
-  .slider-main-title {
-    font-size: 18px;
-  }
+
   .slider-nav-btn {
     display: none;
   }

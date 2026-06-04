@@ -1,6 +1,6 @@
 /* ====== Global styling ====== */
 .section {
-  padding: 36px 32px 0px;
+  padding: 36px 32px;
 }
 
 .container {
@@ -10,8 +10,8 @@
 
 .section-title {
   color: #2f4858;
-  font-size: 26px;
   font-weight: 700;
+  font-size: 26px;
   line-height: 1.5;
   margin-bottom: 24px;
 }

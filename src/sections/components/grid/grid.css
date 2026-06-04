@@ -40,7 +40,6 @@
 .grid-wrapper {
   display: grid;
   gap: 24px;
-  margin-bottom: 20px;
   justify-items: center;
   align-items: stretch;
   max-width: 100%;

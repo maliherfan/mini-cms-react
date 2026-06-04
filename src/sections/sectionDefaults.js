@@ -33,7 +33,7 @@ export const createDefaultGridProps = () => ({
     },
   ],
   cardsLayout: 'simple',
-  cardsStyled:false,
+  cardsStyled: false,
   iconSize: 'medium',
   columns: '3',
   ctaText: 'شروع همکاری',
@@ -81,7 +81,13 @@ export const createDefaultFooterProps = () => ({
 
 export const createDefaultSliderProps = () => ({
   title: 'اسلایدر هوشمند',
-  sectionBg: '#f8fafc',
+  subtitle:'توضیحات',
+  backgroundColor: '#f8fafc',
+  variant: 'single',
+  autoplay: false,
+  autoplayDelay: '3000',
+  showArrows : true,
+  showDots : true,
   slides: [
     {
       type: 'content',
@@ -93,6 +99,13 @@ export const createDefaultSliderProps = () => ({
       gridProps: createDefaultGridProps(),
     },
   ],
+  cardsPerSlide: '5',
+  cards: {
+    ...createDefaultGridProps(),
+    title: 'کارت‌ها',
+    subtitle: 'این بخش به صورت sliding window بین آیتم‌ها حرکت می‌کند.',
+    columns: '5',
+  },
 });
 
 export const sectionDefaults = {
