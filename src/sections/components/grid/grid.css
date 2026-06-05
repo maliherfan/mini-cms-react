@@ -96,7 +96,7 @@
 .card-styled {
   border: 1px solid #fff;
   padding: 20px;
-  min-height: 180px;
+  min-height: 120px;
   box-shadow: 0px 0px 20px #9191911f;
   border-radius: 20px;
 }
@@ -164,15 +164,21 @@
     --grid-cols: 1;
     gap: 24px;
   }
+
+  .layout-horizontal {
+    gap: 20px;
+  }
   .grid-card.has-card-bg {
     max-width: 320px;
     max-height: 240px;
   }
   .grid-card h3 {
-    font-size: 14px;
+    font-size: 16px;
+    margin-bottom: 5px;
   }
   .grid-card p {
     font-size: 14px;
+    line-height: 1.5;
   }
   .grid-cta {
     font-size: 14px;
@@ -184,8 +190,8 @@
     font-size: 14px;
   }
   .grid-card img.size-medium {
-    width: 48px;
-    height: 40px;
+    width: 55px;
+    height: 45px;
   }
   .grid-card img.size-large {
     width: 80px;
