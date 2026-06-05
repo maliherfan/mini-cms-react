@@ -5,7 +5,7 @@
 }
 .section-controls {
   position: absolute;
-  z-index: 20;
+  z-index: 2000;
   top: 5px;
   right: 5px;
   background: #fff;
@@ -29,6 +29,8 @@
 
 .section-list-button {
   display: block;
+  width: 100%;
+  text-align: right;
   margin-bottom: 8px;
   cursor: pointer;
 }
@@ -103,6 +105,7 @@
 
 .editor-image-preview-img {
   width: 120px;
+  max-width: 100%;
   display: block;
 }
 
@@ -157,4 +160,61 @@
   margin-top: 12px;
   display: flex;
   justify-content: flex-end;
+}
+
+.editor-object-group {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.object-group-label {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.editor-object-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .section-list {
+    padding: 12px;
+  }
+
+  .section-list-title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .section-list-button {
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    border: 1px solid rgba(46, 46, 58, 0.12);
+    border-radius: 8px;
+    background: #fff;
+    font-family: 'vazirmatn';
+  }
+
+  .section-settings {
+    padding: 12px;
+  }
+
+  .admin-field label {
+    font-size: 12px;
+  }
+
+  .admin-field-switch {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .editor-object-group {
+    padding: 10px;
+  }
 }

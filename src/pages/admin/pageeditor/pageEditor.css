@@ -19,6 +19,7 @@
   background: var(--accent);
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 12px;
 }
 
 .page-editor-title {
@@ -97,4 +98,62 @@
   overflow-y: auto;
   background: #f7f8fa;
   padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .page-editor {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .page-editor-header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+  }
+
+  .page-editor-title {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .page-editor-header-actions {
+    width: 100%;
+  }
+
+  .page-editor-header-actions .page-editor-button {
+    flex: 1;
+  }
+
+  .page-editor-body {
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .page-editor-sidebar {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .page-editor-sidebar-right {
+    width: 100%;
+    flex: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(46, 46, 58, 0.1);
+  }
+
+  .page-editor-preview {
+    width: 100%;
+    overflow: visible;
+    padding: 12px;
+    min-height: 300px;
+  }
+
+  .page-editor-sidebar-left {
+    width: 100%;
+    flex: none;
+    border-left: none;
+    border-top: 1px solid rgba(46, 46, 58, 0.1);
+  }
 }
