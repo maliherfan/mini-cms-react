@@ -55,6 +55,13 @@
   color: var(--text-color, inherit);
 }
 
+.content-text-side .section-title,
+.content-text-side .section-subtitle,
+.content-text-side .list-title,
+.content-text-side .list-text {
+  color: inherit;
+}
+
 .ratio-8-2 .content-text-side {
   flex: 8;
 }
@@ -138,7 +145,7 @@
 }
 .list-text {
   font-size: 14px;
-  color: #666;
+  color: inherit;
   line-height: 1.5;
 }
 

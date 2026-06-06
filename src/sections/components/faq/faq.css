@@ -40,6 +40,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 4px;
 }
 
 .faq-answer {
@@ -50,14 +51,33 @@
   font-size: 16px;
 }
 
+.faq-text{
+  width: 90%;
+}
+
+.faq-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e2f2ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .faq-section {
     padding-bottom: 0px;
   }
   .faq-question {
     font-size: 14px;
+    padding: 12px;
   }
   .faq-answer {
     font-size: 12px;
+  }
+  .faq-icon {
+    width: 32px;
+    height: 32px;
   }
 }

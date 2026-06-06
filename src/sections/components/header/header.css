@@ -52,7 +52,13 @@
     gap: 12px;
   }
   .header-nav {
+    gap: 20px;
+    /* width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: center;
     gap: 25px;
+    padding-bottom: 6px; */
   }
   .header-link {
     font-size: 14px;

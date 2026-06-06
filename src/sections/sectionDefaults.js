@@ -36,6 +36,7 @@ export const createDefaultGridProps = () => ({
   cardsStyled: false,
   iconSize: 'medium',
   columns: '3',
+  mobileColumns: 1,
   ctaText: 'شروع همکاری',
   ctaLink: '/contact',
   ctaColor: '#f59e0b',
@@ -72,8 +73,8 @@ export const createDefaultFooterProps = () => ({
   logo: '',
   description: 'تمامی حقوق این سایت متعلق به کاریار استودیو است.',
   socialLinks: [
-    { icon: 'linkedin', link: '#' },
-    { icon: 'instagram', link: '#' },
+    { icon: '', link: '#' },
+    { icon: '', link: '#' },
   ],
   backgroundColor: '#ffffff',
   textColor: '#000000',
@@ -81,13 +82,13 @@ export const createDefaultFooterProps = () => ({
 
 export const createDefaultSliderProps = () => ({
   title: 'اسلایدر هوشمند',
-  subtitle:'توضیحات',
+  subtitle: 'توضیحات',
   backgroundColor: '#f8fafc',
   variant: 'single',
   autoplay: false,
   autoplayDelay: '3000',
-  showArrows : true,
-  showDots : true,
+  showArrows: true,
+  showDots: true,
   slides: [
     {
       type: 'content',

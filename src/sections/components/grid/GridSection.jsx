@@ -9,6 +9,7 @@ export default function GridSection(props) {
     subtitle,
     items = [],
     columns = 3,
+    mobileColumns = 1,
     ctaText,
     ctaLink,
     ctaColor,
@@ -21,10 +22,11 @@ export default function GridSection(props) {
   } = props;
 
   const cssVars = {
-    '--grid-bg': backgroundColor,
+    '--grid-bg': backgroundColor || 'transparent',
     '--grid-bg-image': backgroundImage ? `url(${backgroundImage})` : 'none',
-    '--grid-cols': columns,
-    '--grid-cta-bg': ctaColor,
+    '--grid-cols': columns || 3,
+    '--grid-mobile-cols': mobileColumns || 1,
+    '--grid-cta-bg': ctaColor || '#f28c18',
   };
   return (
     <section className="section grid-section" style={cssVars}>
@@ -36,7 +38,13 @@ export default function GridSection(props) {
                 <img src={mainIcon} className="main-section-icon" alt="" />
                 {title && <h2 className="section-title">{title}</h2>}
               </div>
-              {secondaryIcon && <img src={secondaryIcon} alt="" />}
+              {secondaryIcon && (
+                <img
+                  className="main-section-secondary-icon"
+                  src={secondaryIcon}
+                  alt=""
+                />
+              )}
             </div>
             {subtitle && (
               <p className="section-subtitle section-description">{subtitle}</p>

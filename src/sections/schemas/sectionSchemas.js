@@ -112,6 +112,12 @@ export const gridFields = [
     type: 'select',
     options: ['2', '3', '4', '5', '6', '7'],
   },
+  {
+    name: 'mobileColumns',
+    label: 'تعداد ستون در حالت موبایل',
+    type: 'select',
+    options: ['1', '2', '3'],
+  },
 
   { name: 'ctaText', label: 'متن دکمه (اختیاری)', type: 'text' },
   { name: 'ctaLink', label: 'لینک دکمه', type: 'text' },
@@ -242,7 +248,7 @@ export const sectionSchemas = {
     {
       name: 'cardsPerSlide',
       label: 'تعداد کارت در هر حرکت',
-      type: 'select',      
+      type: 'select',
       options: ['1', '2', '3', '4', '5', '6'],
     },
 

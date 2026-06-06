@@ -22,13 +22,19 @@ export default function FooterSection(props) {
           <div className="footer-social">
             {socialLinks.map((item, i) => (
               <a key={i} href={item.link}>
-                {item.icon && <img className="footer-social-logo" src={item.icon} alt="social" />}
+                {item.icon && (
+                  <img
+                    className="footer-social-logo"
+                    src={item.icon}
+                    alt="social"
+                  />
+                )}
               </a>
             ))}
           </div>
         </div>
 
-        <p>{description}</p>
+        {description && <p>{description}</p>}
       </div>
     </footer>
   );

@@ -53,8 +53,8 @@ export default function ContentSection(props) {
       {backgroundImage && <div className="content-overlay" />}
       <div className="container content-inner">
         <div className="content-text-side">
-          <h2 className="section-title">{title}</h2>
-          <p className="section-subtitle">{subtitle}</p>
+          {title && <h2 className="section-title">{title}</h2>}
+          {subtitle && <p className="section-subtitle">{subtitle}</p>}
           {customItems.length > 0 && renderList()}
           {ctaText && ctaLink && (
             <a className="content-cta" href={ctaLink || '#'}>

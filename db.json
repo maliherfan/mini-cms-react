@@ -165,7 +165,8 @@
               "ctaColor": "#f59e0b",
               "backgroundColor": "",
               "backgroundImage": "",
-              "bordering": false
+              "bordering": false,
+              "mobileColumns": "3"
             },
             "showArrows": false,
             "showDots": false
@@ -482,7 +483,8 @@
               "ctaColor": "",
               "backgroundColor": "",
               "backgroundImage": "",
-              "bordering": false
+              "bordering": false,
+              "mobileColumns": "3"
             },
             "showArrows": false,
             "showDots": true
@@ -770,7 +772,7 @@
             "ctaText": "شروع همکاری",
             "ctaLink": "/pages/contact",
             "backgroundColor": "#ffffff",
-            "cardsLayout": "styled",
+            "cardsLayout": "simple",
             "backgroundImage": "/images/about/section-bg2.svg",
             "cardsStyled": true
           }
@@ -893,7 +895,8 @@
             "ctaLink": "",
             "backgroundColor": "#ffffff",
             "iconSize": "large",
-            "cardsLayout": "horizontal"
+            "cardsLayout": "horizontal",
+            "mobileColumns": "3"
           }
         },
         {
