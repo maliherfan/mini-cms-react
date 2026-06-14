@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { usePages } from '../../hooks/usePages';
 import PageRenderer from '../../renderer/PageRenderer';
+import '../styles/CommonPagesStyle.css';
 
 export default function PublicPage() {
   //get page name from address
@@ -10,15 +11,20 @@ export default function PublicPage() {
 
   const [page, setPage] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchPageData = async () => {
       try {
         setLoading(true);
+        setError(null);
+        setPage(null);
+
         const pageData = await managePage('GET', { slug });
         setPage(pageData);
       } catch (err) {
         console.error('Page load failed:', err);
+        setError('Failed to load page. Please try again.');
       } finally {
         setLoading(false);
       }
@@ -27,8 +33,16 @@ export default function PublicPage() {
     if (slug) fetchPageData();
   }, [slug, managePage]);
 
-  if (loading) return <div>Loading...</div>;
-  if (!page) return <div>404 - Page Not Found</div>;
+  if (loading) {
+    return (
+      <div className="page-loading">
+        <div className="page-spinner"></div>
+        <span>در حال بارگذاری...</span>
+      </div>
+    );
+  }
+  if (error) return <div className="error-message">{error}</div>;
+  if (!page) return <div className="error-message">404 - Page Not Found</div>;
 
   return (
     <div className="public-page-wrapper">

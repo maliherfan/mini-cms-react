@@ -1,26 +1,45 @@
 import { useState } from 'react';
 import './CreateDeletePageModal.css';
 
+const slugify = (text) => {
+  return text
+    .toString()
+    .toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-') //replace whitespaces with -
+    .replace(/[^\w\u0600-\u06FF-]+/g, '') //remove invalid characters(persian supported)
+    .replace(/--+/g, '-'); //remove additional -
+};
+
 export default function CreateDeletePageModal({
   type, // "create" | "delete"
   page,
-  pages,
+  pages = [],
   onClose,
   onConfirm,
 }) {
   const [title, setTitle] = useState('');
   const [slug, setSlug] = useState('');
   const [validationError, setValidationError] = useState('');
+  const [isAutoSlug, setIsAutoSlug] = useState(true);
 
   if (!type) return null;
 
   const handleCreate = (e) => {
     e.preventDefault();
+    const normalizedTitle = title.trim();
+    const normalizedSlug = slug.trim().toLowerCase();
+
+    if (!normalizedTitle || !normalizedSlug) {
+      setValidationError('لطفاً تمامی فیلدها را پر کنید.');
+      return;
+    }
+
     const isTitleDuplicate = pages.some(
-      (p) => p.title.trim().toLowerCase() === title.trim().toLowerCase()
+      (p) => p.title.trim().toLowerCase() === normalizedTitle.toLowerCase()
     );
     const isSlugDuplicate = pages.some(
-      (p) => p.slug.trim().toLowerCase() === slug.trim().toLowerCase()
+      (p) => p.slug.trim().toLowerCase() === normalizedSlug
     );
     if (isTitleDuplicate) {
       setValidationError('این عنوان صفحه قبلاً استفاده شده است.');
@@ -31,7 +50,33 @@ export default function CreateDeletePageModal({
       return;
     }
     setValidationError('');
-    onConfirm({ title, slug });
+    onConfirm({
+      title: normalizedTitle,
+      slug: normalizedSlug,
+    });
+  };
+
+  const handleTitleChange = (e) => {
+    const newTitle = e.target.value;
+    setTitle(newTitle);
+    setValidationError('');
+
+    if (isAutoSlug) {
+      setSlug(slugify(newTitle));
+    }
+  };
+
+  const handleSlugChange = (e) => {
+    const val = e.target.value;
+
+    setSlug(val);
+    setValidationError('');
+    setIsAutoSlug(false);
+
+    if (val === '') {
+      setIsAutoSlug(true);
+      setSlug(slugify(title));
+    }
   };
 
   return (
@@ -47,10 +92,8 @@ export default function CreateDeletePageModal({
                 type="text"
                 placeholder="Page Title"
                 value={title}
-                onChange={(e) => {
-                  setTitle(e.target.value);
-                  setValidationError('');
-                }}
+                onChange={handleTitleChange}
+                autoFocus
                 required
               />
 
@@ -59,10 +102,7 @@ export default function CreateDeletePageModal({
                 type="text"
                 placeholder="Slug"
                 value={slug}
-                onChange={(e) => {
-                  setSlug(e.target.value);
-                  setValidationError('');
-                }}
+                onChange={handleSlugChange}
                 required
               />
 
@@ -102,7 +142,7 @@ export default function CreateDeletePageModal({
               <button
                 type="button"
                 className="page-modal-button page-modal-button-delete"
-                onClick={() => onConfirm(page.id)}
+                onClick={() => onConfirm(page?.id)}
               >
                 حذف
               </button>

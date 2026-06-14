@@ -1427,6 +1427,84 @@
           }
         }
       ]
+    },
+    {
+      "title": "Gallery",
+      "slug": "gallery",
+      "sections": [
+        {
+          "id": "sec_1781094999848",
+          "type": "header",
+          "props": {
+            "logo": "",
+            "menuItems": [
+              {
+                "label": "خانه",
+                "link": "/"
+              },
+              {
+                "label": "خدمات",
+                "link": "/services"
+              },
+              {
+                "label": "درباره ما",
+                "link": "/about"
+              },
+              {
+                "label": "تماس با ما",
+                "link": "/contact"
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "textColor": "#111111",
+            "sticky": true
+          }
+        },
+        {
+          "id": "sec_1781095002588",
+          "type": "content",
+          "props": {
+            "title": "عنوان سکشن",
+            "subtitle": "توضیحات مربوط به سکشن در اینجا قرار می‌گیرد.",
+            "textAlign": "right",
+            "textColor": "#1f2937",
+            "ctaText": "",
+            "ctaLink": "",
+            "ctaColor": "#f59e0b",
+            "customItems": [],
+            "contentType": "none",
+            "image": "",
+            "layout": "image-right",
+            "imageProportion": "ratio-7-3",
+            "faqItems": [],
+            "backgroundImage": "",
+            "backgroundOverlay": "rgba(0, 0, 0, 0.4)",
+            "backgroundColor": "#ffffff",
+            "minHeight": "320px"
+          }
+        },
+        {
+          "id": "sec_1781188098923",
+          "type": "footer",
+          "props": {
+            "logo": "",
+            "description": "تمامی حقوق این سایت متعلق به کاریار استودیو است.",
+            "socialLinks": [
+              {
+                "icon": "",
+                "link": "#"
+              },
+              {
+                "icon": "",
+                "link": "#"
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "textColor": "#000000"
+          }
+        }
+      ],
+      "id": "dQbkgORf5sw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

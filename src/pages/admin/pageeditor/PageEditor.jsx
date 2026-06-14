@@ -5,6 +5,7 @@ import PageRenderer from '../../../renderer/PageRenderer';
 import SectionList from '../../../builder/components/sectionlists/SectionLists';
 import SectionSettings from '../../../builder/components/sectionsettings/SectionSettings';
 import { useEditorStore } from '../../../store/useEditorStore';
+import '../../styles/CommonPagesStyle.css';
 import './pageEditor.css';
 
 export default function PageEditor() {
@@ -14,6 +15,8 @@ export default function PageEditor() {
   const [page, setPage] = useState(null);
   const { managePage } = usePages();
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(null);
+  const [saveError, setSaveError] = useState(null);
   const [saving, setSaving] = useState(false);
 
   const sections = useEditorStore((s) => s.sections);
@@ -26,13 +29,18 @@ export default function PageEditor() {
     const fetchPage = async () => {
       try {
         setLoading(true);
+        setLoadError(null);
+        setPage(null);
+
         const data = await managePage('GET', { id });
+
         if (data) {
           setPage(data);
           initEditor(data.sections || []);
         }
       } catch (err) {
         console.error('Load failed:', err);
+        setLoadError('Failed to load page.');
       } finally {
         setLoading(false);
       }
@@ -45,6 +53,8 @@ export default function PageEditor() {
   const handleSave = async () => {
     try {
       setSaving(true);
+      setSaveError(null);
+
       const updatedPage = {
         ...page,
         sections: sections,
@@ -53,19 +63,31 @@ export default function PageEditor() {
       if (savedPage) {
         setPage(savedPage);
         initEditor(savedPage.sections || []);
+        setSaved();
+        alert('Page updated successfully!');
       }
-      setSaved();
-      alert('Page updated successfully!');
     } catch (err) {
-      alert('Save failed!');
       console.error(err);
+      setSaveError('Failed to save changes.');
     } finally {
       setSaving(false);
     }
   };
 
-  if (loading)
-    return <div className="page-editor-loading">Loading Builder...</div>;
+  if (loading) {
+    return (
+      <div className="page-loading">
+        <div className="page-spinner"></div>
+        <span>در حال بارگذاری...</span>
+      </div>
+    );
+  }
+  if (loadError) {
+    return <div className="error-message">{loadError}</div>;
+  }
+  if (!page) {
+    return <div className="error-message">Page not found.</div>;
+  }
 
   return (
     <div className="page-editor">
@@ -89,6 +111,8 @@ export default function PageEditor() {
           </button>
         </div>
       </div>
+
+      {saveError && <div className="error-message">{saveError}</div>}
 
       <div className="page-editor-body">
         <aside className="page-editor-sidebar page-editor-sidebar-right">

@@ -12,18 +12,6 @@
   font-weight: 700;
 }
 
-.pages-dashboard-status {
-  margin-top: 10px;
-  color: var(--accent);
-  font-size: 14px;
-}
-
-.pages-dashboard-error {
-  margin-top: 10px;
-  color: #d64545;
-  font-size: 14px;
-}
-
 .pages-dashboard-button {
   border: 1px solid transparent;
   border-radius: 8px;
@@ -166,7 +154,7 @@
 
   .pages-dashboard-table {
     /* min-width: 560px; */
-     min-width: auto;
+    min-width: auto;
     width: 100%;
   }
 

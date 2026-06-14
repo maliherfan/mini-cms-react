@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { usePages } from '../../../hooks/usePages';
 import CreateDeletePageModal from '../../../components/modal/CreateDeletePageModal';
+import '../../styles/CommonPagesStyle.css';
 import './PagesDashboard.css';
 
 export default function PagesDashboard() {
@@ -25,15 +26,19 @@ export default function PagesDashboard() {
   };
 
   const handleConfirm = async (data) => {
-    if (modalType === 'create') {
-      await managePage('POST', { ...data, sections: [] });
-    }
+    try {
+      if (modalType === 'create') {
+        await managePage('POST', { ...data, sections: [] });
+      }
 
-    if (modalType === 'delete') {
-      await managePage('DELETE', { id: data });
-    }
+      if (modalType === 'delete') {
+        await managePage('DELETE', { id: data });
+      }
 
-    closeModal();
+      closeModal();
+    } catch (err) {
+      console.error('Page action failed:', err);
+    }
   };
 
   return (
@@ -48,8 +53,13 @@ export default function PagesDashboard() {
         + ایجاد صفحه جدید
       </button>
 
-      {loading && <p className="pages-dashboard-status">Loading...</p>}
-      {error && <p className="pages-dashboard-error">{error}</p>}
+      {loading && (
+        <div className="page-loading">
+          <div className="page-spinner"></div>
+          <span>در حال بارگذاری...</span>
+        </div>
+      )}
+      {error && <p className="error-message">{error}</p>}
 
       <div className="pages-dashboard-table-wrap">
         <table className="pages-dashboard-table">

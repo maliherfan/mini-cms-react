@@ -99,6 +99,38 @@
   background: transparent;
 }
 
+.editor-file-input {
+  display: none;
+}
+
+.editor-button-file {
+  background: #fff;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'vazirmatn';
+  display: inline-block;
+}
+
+.editor-button-file:hover {
+  background: #f7f7f7;
+}
+
+.editor-button-remove {
+  background: #fff;
+  border: 1px solid #e74c3c;
+  color: #e74c3c;
+}
+
+.editor-button-remove:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
 .editor-image-preview {
   margin-top: 10px;
 }
