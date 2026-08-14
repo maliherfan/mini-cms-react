@@ -21,7 +21,7 @@ export default function FAQSection(props) {
               aria-controls={`faq-answer-${i}`}
               onClick={() => setOpenIndex(openIndex === i ? null : i)}
             >
-              <span className='faq-text'>{item.question}</span>
+              <span className="faq-text">{item.question}</span>
               <span className="faq-icon">
                 {openIndex === i ? (
                   <img src="/images/open.svg" alt="" />

@@ -128,7 +128,7 @@ export const gridFields = [
   { name: 'bordering', label: 'کادربندی', type: 'switch' },
 ];
 
-const headerFields = [
+export const headerFields = [
   { name: 'logo', label: 'لوگو', type: 'image' },
 
   {
@@ -146,7 +146,7 @@ const headerFields = [
   { name: 'sticky', label: 'هدر چسبان', type: 'switch' },
 ];
 
-const faqFields = [
+export const faqFields = [
   { name: 'title', label: 'عنوان بخش', type: 'text' },
 
   {
@@ -162,7 +162,7 @@ const faqFields = [
   { name: 'backgroundColor', label: 'رنگ پس‌زمینه', type: 'color' },
 ];
 
-const footerFields = [
+export const footerFields = [
   { name: 'logo', label: 'لوگو', type: 'image' },
   { name: 'description', label: 'توضیح کوتاه', type: 'textarea' },
 

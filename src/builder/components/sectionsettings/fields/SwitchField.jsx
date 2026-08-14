@@ -1,6 +1,6 @@
 export default function SwitchField({ field, value, onChange }) {
   return (
-     <div className="admin-field admin-field-switch">
+    <div className="admin-field admin-field-switch">
       <label>{field.label}</label>
 
       <input

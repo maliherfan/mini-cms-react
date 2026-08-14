@@ -1,9 +1,11 @@
 /* ====== Global styling ====== */
 .section {
+  width: 100%;
   padding: 36px 32px;
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }

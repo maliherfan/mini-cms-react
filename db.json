@@ -1436,7 +1436,7 @@
           "id": "sec_1781094999848",
           "type": "header",
           "props": {
-            "logo": "",
+            "logo": "/images/karyar.svg",
             "menuItems": [
               {
                 "label": "خانه",
@@ -1461,30 +1461,87 @@
           }
         },
         {
-          "id": "sec_1781095002588",
+          "id": "sec_1781416592751",
           "type": "content",
           "props": {
-            "title": "عنوان سکشن",
+            "title": "عنوان ",
             "subtitle": "توضیحات مربوط به سکشن در اینجا قرار می‌گیرد.",
             "textAlign": "right",
-            "textColor": "#1f2937",
+            "textColor": "#327fec",
             "ctaText": "",
             "ctaLink": "",
             "ctaColor": "#f59e0b",
-            "customItems": [],
-            "contentType": "none",
+            "customItems": [
+              {
+                "icon": "",
+                "title": "آیتم 1",
+                "text": "توضیحات آیتم 1"
+              }
+            ],
+            "contentType": "image",
             "image": "",
-            "layout": "image-right",
-            "imageProportion": "ratio-7-3",
+            "layout": "image-left",
+            "imageProportion": "ratio-5-5",
             "faqItems": [],
             "backgroundImage": "",
             "backgroundOverlay": "rgba(0, 0, 0, 0.4)",
             "backgroundColor": "#ffffff",
-            "minHeight": "320px"
+            "minHeight": "450px"
           }
         },
         {
-          "id": "sec_1781188098923",
+          "id": "sec_1781416598585",
+          "type": "grid",
+          "props": {
+            "title": "نمونه کارها",
+            "mainIcon": "",
+            "secondaryIcon": "",
+            "subtitle": "توضیحات مربوط به سکشن در اینجا قرار می‌گیرد.",
+            "items": [
+              {
+                "icon": "",
+                "title": "پروژه شماره یک",
+                "text": "توضیح کوتاه درباره این پروژه.",
+                "backgroundImage": "",
+                "backgroundColor": ""
+              },
+              {
+                "icon": "",
+                "title": "پروژه شماره دو",
+                "text": "توضیحات",
+                "backgroundImage": "",
+                "backgroundColor": ""
+              },
+              {
+                "icon": "",
+                "title": "پروژه شماره 3 ",
+                "text": "توضیحات",
+                "backgroundImage": "",
+                "backgroundColor": ""
+              },
+              {
+                "icon": "",
+                "title": "پروژه شماره 4",
+                "text": "",
+                "backgroundImage": "",
+                "backgroundColor": ""
+              }
+            ],
+            "cardsLayout": "simple",
+            "cardsStyled": false,
+            "iconSize": "medium",
+            "columns": "5",
+            "mobileColumns": 1,
+            "ctaText": "شروع همکاری",
+            "ctaLink": "/contact",
+            "ctaColor": "#f59e0b",
+            "backgroundColor": "#ffffff",
+            "backgroundImage": "",
+            "bordering": false
+          }
+        },
+        {
+          "id": "sec_1782274398159",
           "type": "footer",
           "props": {
             "logo": "",

@@ -1,4 +1,5 @@
 .grid-section {
+  /* width: 100%; */
   background-color: var(--grid-bg, transparent);
   background-image: var(--grid-bg-image, none);
   background-repeat: no-repeat;

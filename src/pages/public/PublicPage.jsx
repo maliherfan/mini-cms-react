@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { usePages } from '../../hooks/usePages';
 import PageRenderer from '../../renderer/PageRenderer';
 import '../styles/CommonPagesStyle.css';
+import './PublicPage.css';
 
 export default function PublicPage() {
   //get page name from address

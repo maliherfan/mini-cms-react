@@ -110,14 +110,21 @@ export const createDefaultSliderProps = () => ({
 });
 
 export const sectionDefaults = {
-  header: createDefaultHeaderProps(),
-  content: createDefaultContentProps(),
-  grid: createDefaultGridProps(),
-  faq: createDefaultFaqProps(),
-  footer: createDefaultFooterProps(),
-  slider: createDefaultSliderProps(),
+  header: createDefaultHeaderProps,
+  content: createDefaultContentProps,
+  grid: createDefaultGridProps,
+  faq: createDefaultFaqProps,
+  footer: createDefaultFooterProps,
+  slider: createDefaultSliderProps,
 };
 
 export const getDefaultSectionProps = (type) => {
-  return sectionDefaults[type] || {};
+  const createProps = sectionDefaults[type];
+
+  if (!createProps) {
+    console.warn(`Unknown section type: ${type}`);
+    return {};
+  }
+
+  return createProps();
 };

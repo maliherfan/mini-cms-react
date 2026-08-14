@@ -1,5 +1,6 @@
 .pages-dashboard {
-  max-width: 960px;
+  width: 100%;
+  max-width: 760px;
   margin: 20px auto;
   padding: 20px;
 }
@@ -15,6 +16,7 @@
 .pages-dashboard-button {
   border: 1px solid transparent;
   border-radius: 8px;
+  outline: none;
   padding: 9px 14px;
   font-size: 14px;
   font-weight: 600;
@@ -32,7 +34,7 @@
 }
 
 .pages-dashboard-button-create {
-  width: 100%;
+  width: auto;
   margin-bottom: 20px;
   background: var(--primary);
   border-color: var(--primary);
@@ -70,6 +72,23 @@
   text-align: right;
 }
 
+.pages-dashboard-table th:nth-child(1), 
+.pages-dashboard-table td:nth-child(1) {
+  width: 25%;
+  text-align: right;
+}
+
+.pages-dashboard-table th:nth-child(2), 
+.pages-dashboard-table td:nth-child(2) {
+  width: 35%; 
+  text-align: center; 
+}
+
+.pages-dashboard-table th:nth-child(3), 
+.pages-dashboard-table td:nth-child(3) {
+  text-align: center;
+}
+
 .pages-dashboard-table th {
   font-weight: 700;
 }
@@ -102,6 +121,7 @@
 .pages-dashboard-actions {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 

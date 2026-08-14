@@ -74,6 +74,10 @@
   font-family: 'vazirmatn';
 }
 
+.admin-field input:focus, .admin-field textarea:focus, .admin-field select:focus{
+  outline: none;
+}
+
 .editor-array {
   margin-bottom: 16px;
 }
@@ -99,28 +103,21 @@
   background: transparent;
 }
 
-.editor-file-input {
-  display: none;
-}
-
-.editor-button-file {
+.editor-button {
+  border: 1px solid transparent;
   background: #fff;
-  border: 1px solid var(--accent);
   color: var(--accent);
   padding: 8px 14px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
+  line-height: 1.2;
   font-family: 'vazirmatn';
-  display: inline-block;
-}
-
-.editor-button-file:hover {
-  background: #f7f7f7;
 }
 
 .editor-button-remove {
+  margin-top: 10px;
   background: #fff;
   border: 1px solid #e74c3c;
   color: #e74c3c;
@@ -147,19 +144,6 @@
 
 .admin-field-switch input {
   width: auto;
-}
-
-.editor-button {
-  border: 1px solid transparent;
-  background: #fff;
-  color: var(--accent);
-  padding: 8px 14px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.2;
-  font-family: 'vazirmatn';
 }
 
 .editor-button-add {
